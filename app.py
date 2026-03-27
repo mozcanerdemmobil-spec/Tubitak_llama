@@ -17,7 +17,7 @@ if groq_api_key:
         # Daha kararlı ve hızlı olan llama3 modelini deniyoruz
         llm = ChatGroq(
             groq_api_key=groq_api_key, 
-            model_name="llama3-8b-8192" 
+            model_name="llama-3.1-8b-instant" 
         )
         
         # 4. Kullanıcı Girişi (text_input yerine chat_input daha akıcıdır)
