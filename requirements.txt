@@ -1,5 +1,6 @@
 streamlit
 groq
 langchain
-langchain_groq
-faiss-cpu
+langchain-community
+chromadb
+sentence-transformers
