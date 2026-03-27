@@ -1,6 +1,6 @@
 # 🎓 MEB Ortaöğretim Yönetmelik Asistanı (TÜBİTAK Llama)
 
-Bu proje, MEB Ortaöğretim Kurumları Yönetmeliği konusunda uzmanlaşmış, RAG (Retrieval-Augmented Generation) tabanlı bir yapay zeka asistanıdır. Kullanıcıların sınıf geçme, devamsızlık ve disiplin gibi konulardaki sorularını resmi yönetmeliğe sadık kalarak yanıtlar.
+Bu proje, MEB Ortaöğretim Kurumları Yönetmeliği konusunda uzmanlaşması planlanmış, "llama-3.1-8b-instant" modelini kullanan bir Yapay Zeka Botudur. Kullanıcıların sınıf geçme, devamsızlık ve disiplin gibi konulardaki sorularını resmi yönetmeliğe göre yanıtlamayı amaçlar.
 
 ## 🚀 Uygulamayı Başlat
 
@@ -11,14 +11,6 @@ Aşağıdaki butona tıklayarak asistanla hemen konuşmaya başlayabilirsiniz:
 ---
 
 ## 🛠️ Özellikler
-- **Resmi Kaynak:** Sadece yüklenen yönetmelik metni (ChromaDB) üzerinden cevap verir.
-- **Kritik Kurallar:** 22 maddelik özel denetim mekanizması ile halüsinasyonu engeller.
+- **Resmi Kaynak:** Temel alınan veri kaynağımız Meb Yönetmeliğidir.
 - **Hızlı Yanıt:** Groq Llama 3.1 altyapısı ile saniyeler içinde sonuç üretir.
 - **Güvenli:** Kullanıcıların kendi API anahtarlarını kullanmasına olanak tanır.
-
-## 📦 Kurulum (Lokalde Çalıştırmak İçin)
-Eğer projeyi kendi bilgisayarınızda çalıştırmak isterseniz:
-
-1. Depoyu klonlayın:
-   ```bash
-   git clone [https://github.com/kullanici-adin/depo-adin.git](https://github.com/kullanici-adin/depo-adin.git)
