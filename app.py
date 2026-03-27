@@ -150,4 +150,4 @@ if prompt := st.chat_input("Sorunuzu buraya yazın..."):
             st.write(cevap)
             st.session_state.messages.append({"role": "assistant", "content": cevap})
 
-st.caption("⚠️ Asistan hata yapabilir. Verilen bilgilerin doğruluğunu her zaman resmi yönetmeliklerden kontrol edin. Ve eğer mümkünse sorularınızın tamamını bir kerede sorun")
+st.caption("⚠️ Asistan hata yapabilir. Verilen bilgilerin doğruluğunu her zaman resmi yönetmeliklerden kontrol edin. Ve eğer mümkünse sorularınızın tamamını bir kerede sorun.")
