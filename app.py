@@ -149,3 +149,5 @@ if prompt := st.chat_input("Sorunuzu buraya yazın..."):
             cevap = okul_asistani_sorgula(prompt)
             st.write(cevap)
             st.session_state.messages.append({"role": "assistant", "content": cevap})
+
+st.caption("⚠️ Asistan hata yapabilir. Verilen bilgilerin doğruluğunu her zaman resmi yönetmeliklerden kontrol edin.")
