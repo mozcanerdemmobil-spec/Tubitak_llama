@@ -1,4 +1,5 @@
 streamlit
 groq
-langchain  # Eğer vector_db için kullanıyorsan
-faiss-cpu  # Veya hangi vector db'yi kullanıyorsan
+langchain
+langchain_groq
+faiss-cpu
