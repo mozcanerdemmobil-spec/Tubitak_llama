@@ -17,18 +17,18 @@ st.title("🎓 MEB Ortaöğretim Yönetmelik Asistanı")
 
 pdf_url = "https://raw.githubusercontent.com/mozcanerdemmobil-spec/Tubitak_llama/main/05150236_sinifprogrami.pdf"
 
+def show_pdf(url):
+    response = requests.get(url)
+    base64_pdf = base64.b64encode(response.content).decode("utf-8")
+
+    pdf_display = f"""
+    <embed src="data:application/pdf;base64,{base64_pdf}" 
+    width="100%" height="600px" type="application/pdf">
+    """
+    st.markdown(pdf_display, unsafe_allow_html=True)
+
 if st.button("📄 PDF Aç"):
-    response = requests.get(pdf_url)
-    
-    st.download_button(
-        label="PDF'i indir",
-        data=response.content,
-        file_name="sinif_programi.pdf",
-        mime="application/pdf"
-    )
-    
-    st.write("PDF aşağıda görüntüleniyor 👇")
-    st.pdf(response.content)
+    show_pdf(pdf_url)
 
 
 # --- 2. VERİ TABANI VE MODEL HAZIRLIĞI ---
