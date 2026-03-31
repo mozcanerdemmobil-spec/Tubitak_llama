@@ -1,7 +1,7 @@
 import streamlit as st
 from groq import Groq
 from langchain_community.vectorstores import Chroma
-from langchain_huggingface import HuggingFaceEmbeddings # Daha güncel kütüphane yolu
+from langchain_community.embeddings import HuggingFaceEmbeddings
 
 # --- 1. SAYFA AYARLARI ---
 st.set_page_config(page_title="MEB Asistanı", page_icon="🎓", layout="wide")
