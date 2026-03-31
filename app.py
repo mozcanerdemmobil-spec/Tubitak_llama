@@ -15,6 +15,24 @@ st.set_page_config(page_title="MEB Asistanı", page_icon="🎓")
 
 st.title("🎓 MEB Ortaöğretim Yönetmelik Asistanı")
 
+pdf_url = "https://raw.githubusercontent.com/mozcanerdemmobil-spec/Tubitak_llama/main/05150236_sinifprogrami.pdf"
+
+if st.button("📄 PDF Aç"):
+    response = requests.get(pdf_url)
+
+    with open("temp.pdf", "wb") as f:
+        f.write(response.content)
+
+    with open("temp.pdf", "rb") as f:
+        st.download_button(
+            label="📥 PDF indir",
+            data=f,
+            file_name="sinif_programi.pdf",
+            mime="application/pdf"
+        )
+
+    st.write("PDF'i görüntülemek için yukarıdan indir 👆")
+
 def display_pdf(url):
     # PDF'i GitHub'dan çekip base64 formatına çeviriyoruz
     # Bu yöntem bazı tarayıcılarda doğrudan link vermekten daha kararlı çalışır
