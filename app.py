@@ -12,7 +12,14 @@ from langchain_community.embeddings import HuggingFaceEmbeddings
 st.set_page_config(page_title="MEB Asistanı", page_icon="🎓")
 
 st.title("🎓 MEB Ortaöğretim Yönetmelik Asistanı")
+pdf_url = "https://raw.githubusercontent.com/KULLANICI/REPO/main/05150236_sinifprogrami.pdf"
 
+if st.button("📄 PDF Aç"):
+    st.markdown(f"""
+        <iframe src="{pdf_url}" 
+        width="100%" height="600px">
+        </iframe>
+    """, unsafe_allow_html=True)
 
 
 # --- 2. VERİ TABANI VE MODEL HAZIRLIĞI ---
