@@ -18,12 +18,29 @@ st.title("🎓 MEB Ortaöğretim Yönetmelik Asistanı")
 
 # --- 2. VERİ TABANI VE MODEL HAZIRLIĞI ---
 @st.cache_data
-def program_yukle():
+def program_yukle(sinif_adi):
+    # Excel dosyanın Raw URL'si (.xlsx formatında olmalı)
+    url = "https://raw.githubusercontent.com/mozcanerdemmobil-spec/Tubitak_llama/main/programlar.xlsx"
     try:
-        # GitHub reponda bu dosyayı oluşturduğundan emin ol
-        return pd.read_csv("https://raw.githubusercontent.com/mozcanerdemmobil-spec/Tubitak_llama/main/programlar.csv")
+        # sheet_name parametresi ile doğrudan ilgili sayfayı okuyoruz
+        df = pd.read_excel(url, sheet_name=sinif_adi, engine='openpyxl')
+        return df
     except Exception as e:
+        # Sayfa bulunamazsa veya dosya yoksa hata döner
         return None
+
+# --- Arayüz İçindeki Kontrol Kısmı ---
+if istenen_sinif:
+    with st.chat_message("assistant"):
+        # Fonksiyona sınıf adını gönderiyoruz (Örn: "12a")
+        df_program = program_yukle(istenen_sinif)
+        
+        if df_program is not None:
+            st.write(f"İşte **{istenen_sinif.upper()}** sınıfının ders programı:")
+            st.table(df_program)
+            st.session_state.messages.append({"role": "assistant", "content": f"{istenen_sinif.upper()} programı gösterildi."})
+        else:
+            st.error(f"Maalesef '{istenen_sinif}' isimli bir sayfa Excel dosyasında bulunamadı.")
         
 @st.cache_resource
 
