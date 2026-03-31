@@ -1,5 +1,6 @@
 import streamlit as st
 import requests
+import base64
 
 from groq import Groq
 
