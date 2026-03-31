@@ -15,23 +15,41 @@ st.set_page_config(page_title="MEB Asistanı", page_icon="🎓")
 
 st.title("🎓 MEB Ortaöğretim Yönetmelik Asistanı")
 
+def display_pdf(url):
+    # PDF'i GitHub'dan çekip base64 formatına çeviriyoruz
+    # Bu yöntem bazı tarayıcılarda doğrudan link vermekten daha kararlı çalışır
+    response = requests.get(url)
+    base64_pdf = base64.b64encode(response.content).decode('utf-8')
+    
+    # PDF'i gömmek için HTML/Iframe yapısı
+    pdf_display = f'<iframe src="data:application/pdf;base64,{base64_pdf}" width="100%" height="800" type="application/pdf"></iframe>'
+    
+    # HTML'i Streamlit içinde çalıştırıyoruz
+    st.markdown(pdf_display, unsafe_allow_allow_html=True)
+
+# Sayfa Yapılandırması
+st.set_page_config(page_title="Chatbot PDF Viewer", layout="wide")
+
+st.title("🤖 Chatbot PDF Görüntüleyici")
+
 pdf_url = "https://raw.githubusercontent.com/mozcanerdemmobil-spec/Tubitak_llama/main/05150236_sinifprogrami.pdf"
 
-if st.button("📄 PDF Aç"):
-    response = requests.get(pdf_url)
+# Buton ve Gösterim Mantığı
+if "show_pdf" not in st.session_state:
+    st.session_state.show_pdf = False
 
-    with open("temp.pdf", "wb") as f:
-        f.write(response.content)
+col1, col2 = st.columns([1, 5])
 
-    with open("temp.pdf", "rb") as f:
-        st.download_button(
-            label="📥 PDF indir",
-            data=f,
-            file_name="sinif_programi.pdf",
-            mime="application/pdf"
-        )
+with col1:
+    if st.button("📄 Programı Göster"):
+        st.session_state.show_pdf = not st.session_state.show_pdf
 
-    st.write("PDF'i görüntülemek için yukarıdan indir 👆")
+# Eğer butona basıldıysa PDF'i göster
+if st.session_state.show_pdf:
+    st.info("PDF aşağıda görüntüleniyor. Kapatmak için tekrar butona basabilirsiniz.")
+    display_pdf(pdf_url)
+else:
+    st.write("PDF'i görmek için butona tıklayın.")
 
 
 # --- 2. VERİ TABANI VE MODEL HAZIRLIĞI ---
