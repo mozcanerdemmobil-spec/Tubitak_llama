@@ -20,14 +20,32 @@ def load_vector_db():
     return vector_db
 
 @st.cache_data
-def program_yukle(sinif_adi):
-    """GitHub üzerinden Excel'den ilgili sınıfın sayfasını çeker."""
+def program_yukle(istenen_sinif):
     url = "https://raw.githubusercontent.com/mozcanerdemmobil-spec/Tubitak_llama/main/programlar.xlsx"
     try:
-        # Excel dosyasını oku ve sadece istenen sınıfın sayfasını (Sheet) getir
-        df = pd.read_excel(url, sheet_name=sinif_adi, engine='openpyxl')
-        return df
+        # Önce Excel dosyasını komple yükleyelim (sayfa isimlerini kontrol etmek için)
+        excel_file = pd.ExcelFile(url, engine='openpyxl')
+        tum_sayfalar = excel_file.sheet_names # Excel'deki tüm sayfa isimlerini alır
+        
+        # Kullanıcının aradığı sınıfı, Excel'deki sayfalarla karşılaştıralım
+        # (Hem kullanıcı girdisini hem sayfa isimlerini küçük harfe çevirip boşlukları siliyoruz)
+        hedef_sayfa = None
+        for sayfa in tum_sayfalar:
+            if sayfa.lower().strip() == istenen_sinif.lower().strip():
+                hedef_sayfa = sayfa
+                break
+        
+        if hedef_sayfa:
+            # Eşleşen sayfayı oku
+            df = pd.read_excel(url, sheet_name=hedef_sayfa, engine='openpyxl')
+            return df
+        else:
+            # Debug için: Hangi sayfalar var ekrana yazdıralım (Hata çözülünce bu satırı silebilirsin)
+            st.warning(f"Excel içindeki gerçek sayfalar: {tum_sayfalar}")
+            return None
+            
     except Exception as e:
+        st.error(f"Excel okuma hatası: {e}")
         return None
 
 # --- 3. SIDEBAR (AYARLAR) ---
