@@ -1,4 +1,5 @@
 import streamlit as st
+import requests
 
 from groq import Groq
 
