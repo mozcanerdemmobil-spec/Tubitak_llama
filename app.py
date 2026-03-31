@@ -13,7 +13,7 @@ st.set_page_config(page_title="MEB Asistanı", page_icon="🎓")
 
 st.title("🎓 MEB Ortaöğretim Yönetmelik Asistanı")
 
-pdf_url = "https://raw.githubusercontent.com/KULLANICI/REPO/main/05150236_sinifprogrami.pdf"
+pdf_url = "https://raw.githubusercontent.com/mozcanerdemmobil-spec/Tubitak_llama/main/05150236_sinifprogrami.pdf"
 
 if st.button("📄 PDF Aç"):
     st.markdown(f"""
