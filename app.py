@@ -6,14 +6,6 @@ from langchain_community.vectorstores import Chroma
 
 from langchain_community.embeddings import HuggingFaceEmbeddings
 
-col1, col2 = st.columns([10,1])
-
-with col1:
-    prompt = st.chat_input("Sorunuzu buraya yazın...")
-
-with col2:
-    if st.button("📁"):
-        st.write("Dosya seçme açılabilir")
 
 # --- 1. SAYFA AYARLARI ---
 
