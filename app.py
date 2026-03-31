@@ -12,7 +12,8 @@ from langchain_community.embeddings import HuggingFaceEmbeddings
 st.set_page_config(page_title="MEB Asistanı", page_icon="🎓")
 
 st.title("🎓 MEB Ortaöğretim Yönetmelik Asistanı")
-pdf_url = "05150236_sinifprogrami.pdf"
+
+pdf_url = "https://raw.githubusercontent.com/KULLANICI/REPO/main/05150236_sinifprogrami.pdf"
 
 if st.button("📄 PDF Aç"):
     st.markdown(f"""
