@@ -1,405 +1,139 @@
 import streamlit as st
+import pandas as pd
 import requests
 import base64
-import pandas as pd
 from groq import Groq
-
 from langchain_community.vectorstores import Chroma
-
 from langchain_community.embeddings import HuggingFaceEmbeddings
 
-
 # --- 1. SAYFA AYARLARI ---
+st.set_page_config(page_title="MEB Asistanı", page_icon="🎓", layout="wide")
+st.title("🎓 MEB Ortaöğretim Yönetmelik & Ders Programı Asistanı")
 
-st.set_page_config(page_title="MEB Asistanı", page_icon="🎓")
+# --- 2. VERİ YÜKLEME FONKSİYONLARI ---
 
-st.title("🎓 MEB Ortaöğretim Yönetmelik Asistanı")
+@st.cache_resource
+def load_vector_db():
+    """Yönetmelik veritabanını yükler."""
+    embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
+    vector_db = Chroma(persist_directory="./okul_asistani_db", embedding_function=embeddings)
+    return vector_db
 
-
-# --- 2. VERİ TABANI VE MODEL HAZIRLIĞI ---
 @st.cache_data
 def program_yukle(sinif_adi):
-    # Excel dosyanın Raw URL'si (.xlsx formatında olmalı)
+    """GitHub üzerinden Excel'den ilgili sınıfın sayfasını çeker."""
     url = "https://raw.githubusercontent.com/mozcanerdemmobil-spec/Tubitak_llama/main/programlar.xlsx"
     try:
-        # sheet_name parametresi ile doğrudan ilgili sayfayı okuyoruz
+        # Excel dosyasını oku ve sadece istenen sınıfın sayfasını (Sheet) getir
         df = pd.read_excel(url, sheet_name=sinif_adi, engine='openpyxl')
         return df
     except Exception as e:
-        # Sayfa bulunamazsa veya dosya yoksa hata döner
         return None
 
-# --- 4. ARAYÜZ (SOHBET GEÇMİŞİ) ---
+# --- 3. SIDEBAR (AYARLAR) ---
+with st.sidebar:
+    st.header("⚙️ Ayarlar")
+    api_key = st.text_input("Groq API Key", type="password").strip()
+    
+    secenekler = [
+        "Görevli", "Öğrenci 9a", "Öğrenci 10a", "Öğrenci 11a", "Öğrenci 12a",
+        "Öğrenci 9-B/BL", "Öğrenci 9-C/BL" # Listeyi buraya istediğin gibi ekleyebilirsin
+    ]
+    secilen_rol = st.selectbox("Lütfen rolünüzü seçiniz:", secenekler)
+    st.info(f"Profil: {secilen_rol}")
+
+    if not api_key:
+        st.warning("Lütfen devam etmek için API Key giriniz.")
+        st.stop()
+
+# Gerekli nesneleri başlatıyoruz
+client = Groq(api_key=api_key)
+vector_db = load_vector_db()
+
+# --- 4. SORGULAMA FONKSİYONU (LLM) ---
+def okul_asistani_sorgula(soru):
+    docs = vector_db.similarity_search(soru, k=5)
+    baglam = "\n\n".join([doc.page_content for doc in docs])
+
+    system_prompt = f"""Sen MEB Ortaöğretim Kurumları Yönetmeliği konusunda uzmansın.
+    Kritik Kurallar:
+    1. SADECE 'Bağlam' içindeki bilgileri kullan.
+    2. Cevap yoksa 'Yönetmelikte net bilgi bulamadım' de.
+    3. Cevaplar maddeler halinde ve resmi olsun.
+    4. "Evet" veya "Hayır" ile başla (uygunsa).
+    5. Cevap formatı:
+       Cevap:
+       - ...
+
+    Bağlam:
+    {baglam}
+    """
+
+    try:
+        chat_completion = client.chat.completions.create(
+            messages=[
+                {"role": "system", "content": system_prompt},
+                {"role": "user", "content": soru}
+            ],
+            model="llama-3.1-8b-instant",
+            temperature=0
+        )
+        return chat_completion.choices[0].message.content
+    except Exception as e:
+        return f"Hata: {str(e)}"
+
+# --- 5. CHAT ARAYÜZÜ VE MANTIK ---
 
 if "messages" not in st.session_state:
     st.session_state.messages = []
 
-# Eski mesajları ekrana bas
+# Eski mesajları göster
 for message in st.session_state.messages:
     with st.chat_message(message["role"]):
         st.write(message["content"])
 
-# Kullanıcı yeni bir mesaj yazdığında
-if prompt := st.chat_input("Sorunuzu buraya yazın..."):
+# Yeni girdi kontrolü
+if prompt := st.chat_input("Sorunuzu buraya yazın (Örn: 12a programı nedir?)..."):
     
-    # 1. Kullanıcı mesajını ekrana bas ve kaydet
+    # Kullanıcı mesajını göster ve kaydet
     st.session_state.messages.append({"role": "user", "content": prompt})
     with st.chat_message("user"):
         st.write(prompt)
 
-    # 2. DERS PROGRAMI KONTROLÜ (İşte hatayı çözen kısım burada başlıyor)
+    # DERS PROGRAMI YAKALAMA (INTERCEPT)
     kucuk_prompt = prompt.lower()
-    istenen_sinif = None  # Değişkeni burada güvenli bir şekilde başlattık
+    istenen_sinif = None
+    sinif_listesi = ["9a", "10a", "11a", "12a"] # Excel sheet isimlerinle aynı olmalı
     
-    # Resimdeki sekmelerinle uyumlu sınıf listesi
-    siniflar = ["9a", "10a", "11a", "12a"]
-    
-    # Eğer cümlede program/ders geçiyorsa sınıf ismini ara
+    # Eğer mesajda "program" veya "ders" geçiyorsa sınıfı ara
     if "program" in kucuk_prompt or "ders" in kucuk_prompt:
-        for sinif in siniflar:
-            if sinif in kucuk_prompt:
-                istenen_sinif = sinif
+        for s in sinif_listesi:
+            if s in kucuk_prompt:
+                istenen_sinif = s
                 break
 
-    # 3. Eğer bir sınıf bulunduysa Excel'den getir
+    # EĞER DERS PROGRAMI SORULDUYSA
     if istenen_sinif:
         with st.chat_message("assistant"):
-            with st.spinner(f"{istenen_sinif.upper()} programı getiriliyor..."):
+            with st.spinner(f"{istenen_sinif.upper()} programı yükleniyor..."):
                 df_program = program_yukle(istenen_sinif)
                 
                 if df_program is not None:
-                    st.write(f"İşte **{istenen_sinif.upper()}** sınıfının haftalık programı:")
-                    st.table(df_program)
-                    st.session_state.messages.append({"role": "assistant", "content": f"{istenen_sinif.upper()} programı gösterildi."})
+                    cevap_metni = f"İşte **{istenen_sinif.upper()}** sınıfının haftalık ders programı:"
+                    st.write(cevap_metni)
+                    st.table(df_program) # Tabloyu basar
+                    st.session_state.messages.append({"role": "assistant", "content": cevap_metni})
                 else:
-                    st.error(f"Hata: '{istenen_sinif}' sayfası Excel dosyasında bulunamadı!")
-        
-        st.rerun() # Sayfayı yenileyerek akışı burada kesiyoruz, LLM'e gitmiyoruz.
-
-    # 4. NORMAL YÖNETMELİK SORGUSU (Eğer program sorulmadıysa çalışır)
+                    hata_mesaji = f"Üzgünüm, Excel dosyasında '{istenen_sinif}' isimli bir sayfa bulamadım."
+                    st.error(hata_mesaji)
+                    st.session_state.messages.append({"role": "assistant", "content": hata_mesaji})
+    
+    # NORMAL YÖNETMELİK SORUSU (Program sorulmadıysa)
     else:
         with st.chat_message("assistant"):
             with st.spinner("Yönetmelik taranıyor..."):
                 cevap = okul_asistani_sorgula(prompt)
                 st.write(cevap)
                 st.session_state.messages.append({"role": "assistant", "content": cevap})
-        
-@st.cache_resource
 
-def load_data():
-
-    # Embedding modelini yüklüyoruz
-
-    embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
-
-    # Veri tabanını klasörden yüklüyoruz (Klasör adının doğru olduğundan emin ol)
-
-    vector_db = Chroma(persist_directory="./okul_asistani_db", embedding_function=embeddings)
-
-    return vector_db
-
-
-
-# Sidebar - API Key Girişi
-
-with st.sidebar:
-
-    st.header("Ayarlar")
-
-    api_key = st.text_input("Groq API Key", type="password").strip()
-
-    if not api_key:
-
-        st.warning("Lütfen devam etmek için API Key giriniz.")
-
-        st.stop()
-
-# Combo box (selectbox) oluşturma
-
-secenekler = ["Görevli", "Öğrenci 9-A/BL", "Öğrenci 9-B/BL", "Öğrenci 9-C/BL", "Öğrenci 9-D/BL", "Öğrenci 9-E/EL", "Öğrenci 9-F/EL", "Öğrenci 9-G/EL", "Öğrenci 9-H/EL", "Öğrenci 9-I/EL", "Öğrenci 9/ATP", "Öğrenci 10A/BL", "Öğrenci 10B/BL", "Öğrenci 10C/EN", "Öğrenci 10D/HB", "Öğrenci 10E/HB", "Öğrenci 10 ATP", "Öğrenci 11A/BL", "Öğrenci 11B/BL", "Öğrenci 11C/EN", "Öğrenci 11D/HB", "Öğrenci 11 ATP", "Öğrenci 12A/BL", "Öğrenci 12B/BL", "Öğrenci 12F/HB", "Öğrenci 12G/EN", "Öğrenci 12 ATP"]
-
-secilen_rol = st.sidebar.selectbox(
-
-    "Lütfen rolünüzü seçiniz:",
-
-    secenekler
-
-)
-
-
-
-# Seçilen değere göre ana ekranda işlem yapma
-
-st.write(f"Şu anki profil: **{secilen_rol}**")
-
-
-
-# Gerekli nesneleri oluşturuyoruz
-
-client = Groq(api_key=api_key)
-
-vector_db = load_data()
-
-
-
-# --- 3. SORGULAMA FONKSİYONU ---
-
-def okul_asistani_sorgula(soru):
-
-    # Benzerlik araması yaparak bağlamı çekiyoruz
-
-    docs = vector_db.similarity_search(soru, k=5)
-
-    baglam = "\n\n".join([doc.page_content for doc in docs])
-
-
-
-    # SENİN KRİTİK KURALLARININ TAMAMI
-
-    system_prompt = f"""Sen MEB Ortaöğretim Kurumları Yönetmeliği konusunda uzman, teknik ve resmi bir asistansın.
-
-
-
-    Kritik Kurallar:
-
-    1. SADECE sana verilen 'Bağlam' içindeki bilgileri kullan.
-
-    2. Eğer cevap bağlamda yoksa, 'Bu konuyla ilgili yönetmelikte net bir bilgi bulamadım' de. ASLA dış dünyadan bildiğin bilgileri ekleme (halüsinasyonu önler).
-
-    3. Cevaplarını maddeler halinde ve resmi bir dille ver.
-
-    4. Kişisel yorum yapma, veli veya okul müdürü gibi rolleri sınav katılımcılarıyla karıştırma.
-
-    5. Cevabını aşağıdaki formatta ver:
-
-    Cevap:
-
-    - (Kısa ve net cevap)
-
-    6. Birincil kaynağın her zaman Bağlamdır, ikincil kaynağın ise Yönetmelik temelli yorumlanmış Ek bilgilerdir, bunun dışında hiç bir yerden bilgi eklemesi yapma, Eğer Bağlam ile İkincil kaynak çelişkisi varsa Bağlam doğrudur, Bağlam ve İkincil kaynak aynı anda kullanılamaz, İlk bakacak olduğun yer her zaman Bağlamdır eğer Bağlamda konu hakkında bilgi yok ise İkincil Kaynağa geç eğer ordada bilgi yok ise "Konu Hakkında bir Bilgi bulamadım" yaz.
-
-    7. Aynı cevap içinde ÇELİŞKİ OLAMAZ.
-
-      - Bir bilgi verildiğinde, onu çürüten ikinci bir ifade yazma.
-
-    8. "Ek Bilgi" başlığı KULLANMA.
-
-      - Ek bilgiler, normal cevabın içine yedirilerek yazılmalıdır.
-
-    9. Eğer Ek Bilgi kullanıldıysa:
-
-      - "yönetmelikte net bilgi yok" ifadesi KULLANMA.
-
-      - Bu iki durum aynı cevapta birlikte bulunamaz.
-
-    10. Eğer cevap Ek Bilgiden geliyorsa:
-
-      - Cümleler kesin ama sade olmalı.
-
-      - Örneğin: "Bu durumda sınıfı geçemezsiniz."
-
-    11. SAYISAL sorularda (50, 70, 85 gibi):
-
-      - Kesin cevap ver.
-
-      - Yuvarlak veya kaçamak cevap yazma.
-
-    12. Eğer kullanıcı sorusu:
-
-      - “geçer miyim”
-
-      - “alabilir miyim”
-
-      - “engel olur mu”
-
-      ise:
-
-      → Cevap mutlaka “Evet” veya “Hayır” ile başlamalıdır.
-
-    13. Aynı cevapta hem:
-
-      - hüküm verip
-
-      - hem de belirsizlik belirtme
-
-      YASAKTIR.
-
-      Örnek yasak:
-
-      ❌ "Geçemezsiniz. Ancak yönetmelikte net bilgi yoktur."
-
-    14. Sorulara Cevap verirken, Cevap formatı sadece şu olmalı:
-    Cevap:
-    - ...
-
-    Ek Bilgiler (YÖNETMELİK TEMELLİ YORUMLANMIŞ - İKİNCİL KAYNAK):
-
-    1. Okula geç kalan öğrenci yarım gün devamsız sayılmaz.
-
-      - Geç kalma, devamsızlık değil “derse geç girme” olarak değerlendirilir.
-
-      - Ancak 5 kez derse geç kalma, sistemde yarım gün devamsızlığa dönüştürülür.
-
-    2. Destekleme ve Yetiştirme Kursları (DYK) için devam zorunluluğu vardır.
-
-      - Mazeretsiz devamsızlık süresi, toplam ders saatinin %20’sini (1/5) aşarsa kurs kaydı silinir.
-
-      - Ancak bu devamsızlık örgün eğitimdeki (hafta içi) devamsızlığı etkilemez.
-
-    3. Teşekkür belgesi alabilmek için dönem sonu başarı puanı en az 70 olmalıdır.
-
-    4. Takdir belgesi alabilmek için dönem sonu başarı puanı en az 85 olmalıdır.
-
-    5. Belge (Takdir / Teşekkür) almak için özürsüz devamsızlık süresi 5 günü geçmemelidir.
-
-      - 5 gün ve üzeri özürsüz devamsızlık yapan öğrenci belge alamaz.
-
-    6. Yıl sonu başarı puanı 50 ve üzeri olan öğrenciler, başarısız dersleri olsa bile sorumlu olarak sınıf geçebilir.
-
-    7. Yıl sonu başarı puanı 50’nin altında olan öğrenciler sınıfı doğrudan geçemez.
-
-    8. Bir dersten başarısız olmak (zayıf almak), ortalama 50’nin altındaysa sınıf geçmeye engel olur.
-
-    9. Ortalama 50’nin altında olan öğrenciler, zayıf sayısına bakılmaksızın başarısız sayılır.
-
-    10. Sorumluluk sınavına, başarısız dersi bulunan öğrenciler girer.
-
-        - Bu sınavlar başarısız olunan derslerden yapılır.
-
-    11. Ortak (Türk Dili ve Edebiyatı gibi) derslerden başarısız olan öğrenciler, ortalamaları yeterli olsa bile sorumlu olarak sınıf geçer.
-
-    12. Disiplin cezası alan öğrenciler, davranış puanına bağlı olarak Onur Belgesi alamayabilir.
-
-    13. Okul birinciliği belirlenirken yalnızca akademik başarı değil, disiplin durumu ve genel davranışlar da dikkate alınır.
-
-    14. İşletmede staj yapan öğrencinin kaza geçirmesi durumunda:
-
-        - İşletme durumu derhal okula bildirir
-
-        - Gerekli resmi kayıtlar tutulur
-
-        - Süreç okul ve işletme koordinasyonunda yürütülür
-
-    15. "Ek Bilgi" başlığı sadece gerekli olduğunda kullanılmalıdır.
-
-    16. "Ek Bilgi" içeriği, ana cevabı DESTEKLEMELİDİR.
-
-    17. "Ek Bilgi" kısmına SADECE soruyla doğrudan ilgili bilgiler yazılır.
-
-    18. Aynı cevap içinde çelişki bulunamaz.
-
-    19. Eğer cevap "Evet" veya "Hayır" gerektiriyorsa cevap mutlaka "Evet" veya "Hayır" ile başlamalıdır.
-
-    20. Sayısal kurallar kesin uygulanmalıdır: Puan 50 altıysa geçemez, 50 ve üzeriyse geçebilir.
-
-    21. Ek Bilgi sadece soruya doğrudan katkı sağlıyorsa yazılır.
-
-    22. Hem Bağlamda hem Ek Bilgilerde bilgi yoksa: "Bu konuyla ilgili yönetmelikte net bir bilgi bulamadım" yazılır.
-
-
-
-    Bağlam:
-
-    {baglam}
-
-    """
-
-
-
-    try:
-
-        chat_completion = client.chat.completions.create(
-
-            messages=[
-
-                {"role": "system", "content": system_prompt},
-
-                {"role": "user", "content": f"Soru: {soru}"}
-
-            ],
-
-            model="llama-3.1-8b-instant",
-
-            temperature=0,
-
-            max_tokens=1000
-
-        )
-
-        return chat_completion.choices[0].message.content
-
-    except Exception as e:
-
-        return f"Hata: {str(e)}"
-
-
-
-# --- 4. ARAYÜZ (SOHBET GEÇMİŞİ) ---
-
-if "messages" not in st.session_state:
-    st.session_state.messages = []
-
-# Eski mesajları ekrana bas
-for message in st.session_state.messages:
-    with st.chat_message(message["role"]):
-        st.write(message["content"])
-
-# Kullanıcı yeni bir şey yazarsa
-if prompt := st.chat_input("Sorunuzu buraya yazın (Örn: 12a programı nedir?)..."):
-    
-    # 1. Kullanıcı mesajını kaydet ve göster
-    st.session_state.messages.append({"role": "user", "content": prompt})
-    with st.chat_message("user"):
-        st.write(prompt)
-
-    # 2. DERS PROGRAMI KONTROLÜ (Araya Girme Mantığı)
-    kucuk_prompt = prompt.lower()
-    
-    # Eğer cümlede program veya ders geçiyorsa tablo arayacağız
-    if "program" in kucuk_prompt or "ders" in kucuk_prompt:
-        # Resimdeki sekmelere göre sınıf isimlerin
-        siniflar = ["9a", "10a", "11a", "12a"]
-        istenen_sinif = None
-        
-        # Kullanıcı hangi sınıfı sormuş tespit et
-        for sinif in siniflar:
-            if sinif in kucuk_prompt:
-                istenen_sinif = sinif
-                break
-                
-        if istenen_sinif:
-            with st.chat_message("assistant"):
-                st.write(f"İşte **{istenen_sinif.upper()}** sınıfının ders programı:")
-                
-                df_program = program_yukle()
-                
-                if df_program is not None:
-                    # 'Sınıf' sütunundaki isimlerle (9a, 12a vb.) eşleştir
-                    filtreli_program = df_program[df_program['Sınıf'].astype(str).str.lower() == istenen_sinif]
-                    
-                    if not filtreli_program.empty:
-                        # Sınıf sütununu gizleyerek ekrana temiz bir tablo bas
-                        st.table(filtreli_program.drop(columns=['Sınıf']))
-                        st.session_state.messages.append({"role": "assistant", "content": f"{istenen_sinif.upper()} programı tablo olarak gösterildi."})
-                    else:
-                        st.warning("Bu sınıfın programı henüz sisteme yüklenmemiş.")
-                        st.session_state.messages.append({"role": "assistant", "content": "Program dosyada bulunamadı."})
-                else:
-                    st.error("Veri tabanında `programlar.csv` dosyası bulunamadı! Lütfen dosyayı yükleyin.")
-                    st.session_state.messages.append({"role": "assistant", "content": "CSV Dosya hatası."})
-            
-            # st.stop() çok önemlidir! Program bulunduysa kodun aşağı inip LLaMA'yı çalıştırmasını engeller.
-            st.stop() 
-
-    # 3. NORMAL YÖNETMELİK SORGUSU (Eğer ders programı sorulmadıysa çalışır)
-    with st.chat_message("assistant"):
-        with st.spinner("Yönetmelik taranıyor..."):
-            cevap = okul_asistani_sorgula(prompt)
-            st.write(cevap)
-            st.session_state.messages.append({"role": "assistant", "content": cevap})
-
-st.caption("⚠️ Asistan hata yapabilir. Verilen bilgilerin doğruluğunu her zaman resmi yönetmeliklerden kontrol edin.")
-
-
-
-st.caption("⚠️ Asistan hata yapabilir. Verilen bilgilerin doğruluğunu her zaman resmi yönetmeliklerden kontrol edin. Ve eğer mümkünse sorularınızın tamamını bir kerede sorun.")
+st.caption("⚠️ Bilgileri resmi kaynaklardan doğrulamayı unutmayın.")
