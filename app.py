@@ -24,15 +24,14 @@ with st.sidebar:
         st.warning("Lütfen devam etmek için API Key giriniz.")
         st.stop()
 # Combo box (selectbox) oluşturma
-secenekler = ["Öğretmen", "Öğrenci 9-A", "Öğrenci 9-B", "Öğrenci 10-A", "Veli"]
+secenekler = ["Görevli", "Öğrenci 9-A/BL", "Öğrenci 9-B/BL", "Öğrenci 9-C/BL", "Öğrenci 9-D/BL", "Öğrenci 9-E/EL", "Öğrenci 9-F/EL", "Öğrenci 9-G/EL", "Öğrenci 9-H/EL", "Öğrenci 9-I/EL", "Öğrenci 9/ATP", "Öğrenci 10A/BL", "Öğrenci 10B/BL", "Öğrenci 10C/EN", "Öğrenci 10D/HB", "Öğrenci 10E/HB", "Öğrenci 10 ATP", "Öğrenci 11A/BL", "Öğrenci 11B/BL", "Öğrenci 11C/EN", "Öğrenci 11D/HB", "Öğrenci 11 ATP", "Öğrenci 12A/BL", "Öğrenci 12B/BL", "Öğrenci 12F/HB", "Öğrenci 12G/EN", "Öğrenci 12 ATP"]
 secilen_rol = st.sidebar.selectbox(
     "Lütfen rolünüzü seçiniz:",
     secenekler
 )
 
 # Seçilen değere göre ana ekranda işlem yapma
-st.title(f"Hoş geldiniz!")
-st.write(f"Şu anki görünüm: **{secilen_rol}**")
+st.write(f"Şu anki profil: **{secilen_rol}**")
 
 # Gerekli nesneleri oluşturuyoruz
 client = Groq(api_key=api_key)
