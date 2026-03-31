@@ -1,7 +1,7 @@
 import streamlit as st
 import requests
 import base64
-
+import pandas as pd
 from groq import Groq
 
 from langchain_community.vectorstores import Chroma
@@ -16,26 +16,15 @@ st.set_page_config(page_title="MEB Asistanı", page_icon="🎓")
 st.title("🎓 MEB Ortaöğretim Yönetmelik Asistanı")
 
 
-# Buton ve Gösterim Mantığı
-if "show_pdf" not in st.session_state:
-    st.session_state.show_pdf = False
-
-col1, col2 = st.columns([1, 5])
-
-with col1:
-    if st.button("📄 Programı Göster"):
-        st.session_state.show_pdf = not st.session_state.show_pdf
-
-# Eğer butona basıldıysa PDF'i göster
-if st.session_state.show_pdf:
-    st.info("PDF aşağıda görüntüleniyor. Kapatmak için tekrar butona basabilirsiniz.")
-    display_pdf(pdf_url)
-else:
-    st.write("PDF'i görmek için butona tıklayın.")
-
-
 # --- 2. VERİ TABANI VE MODEL HAZIRLIĞI ---
-
+@st.cache_data
+def program_yukle():
+    try:
+        # GitHub reponda bu dosyayı oluşturduğundan emin ol
+        return pd.read_csv("programlar.csv")
+    except Exception as e:
+        return None
+        
 @st.cache_resource
 
 def load_data():
@@ -180,13 +169,9 @@ def okul_asistani_sorgula(soru):
 
       ❌ "Geçemezsiniz. Ancak yönetmelikte net bilgi yoktur."
 
-    14. Cevap formatı sadece şu olmalı:
-
+    14. Sorulara Cevap verirken, Cevap formatı sadece şu olmalı:
     Cevap:
-
     - ...
-
-
 
     Ek Bilgiler (YÖNETMELİK TEMELLİ YORUMLANMIŞ - İKİNCİL KAYNAK):
 
@@ -293,46 +278,68 @@ def okul_asistani_sorgula(soru):
 # --- 4. ARAYÜZ (SOHBET GEÇMİŞİ) ---
 
 if "messages" not in st.session_state:
-
     st.session_state.messages = []
 
-
-
 # Eski mesajları ekrana bas
-
 for message in st.session_state.messages:
-
     with st.chat_message(message["role"]):
-
         st.write(message["content"])
 
-
-
 # Kullanıcı yeni bir şey yazarsa
-
-if prompt := st.chat_input("Sorunuzu buraya yazın..."):
-
-    # Kullanıcı mesajını kaydet ve göster
-
+if prompt := st.chat_input("Sorunuzu buraya yazın (Örn: 12a programı nedir?)..."):
+    
+    # 1. Kullanıcı mesajını kaydet ve göster
     st.session_state.messages.append({"role": "user", "content": prompt})
-
     with st.chat_message("user"):
-
         st.write(prompt)
 
+    # 2. DERS PROGRAMI KONTROLÜ (Araya Girme Mantığı)
+    kucuk_prompt = prompt.lower()
+    
+    # Eğer cümlede program veya ders geçiyorsa tablo arayacağız
+    if "program" in kucuk_prompt or "ders" in kucuk_prompt:
+        # Resimdeki sekmelere göre sınıf isimlerin
+        siniflar = ["9a", "10a", "11a", "12a"]
+        istenen_sinif = None
+        
+        # Kullanıcı hangi sınıfı sormuş tespit et
+        for sinif in siniflar:
+            if sinif in kucuk_prompt:
+                istenen_sinif = sinif
+                break
+                
+        if istenen_sinif:
+            with st.chat_message("assistant"):
+                st.write(f"İşte **{istenen_sinif.upper()}** sınıfının ders programı:")
+                
+                df_program = program_yukle()
+                
+                if df_program is not None:
+                    # 'Sınıf' sütunundaki isimlerle (9a, 12a vb.) eşleştir
+                    filtreli_program = df_program[df_program['Sınıf'].astype(str).str.lower() == istenen_sinif]
+                    
+                    if not filtreli_program.empty:
+                        # Sınıf sütununu gizleyerek ekrana temiz bir tablo bas
+                        st.table(filtreli_program.drop(columns=['Sınıf']))
+                        st.session_state.messages.append({"role": "assistant", "content": f"{istenen_sinif.upper()} programı tablo olarak gösterildi."})
+                    else:
+                        st.warning("Bu sınıfın programı henüz sisteme yüklenmemiş.")
+                        st.session_state.messages.append({"role": "assistant", "content": "Program dosyada bulunamadı."})
+                else:
+                    st.error("Veri tabanında `programlar.csv` dosyası bulunamadı! Lütfen dosyayı yükleyin.")
+                    st.session_state.messages.append({"role": "assistant", "content": "CSV Dosya hatası."})
+            
+            # st.stop() çok önemlidir! Program bulunduysa kodun aşağı inip LLaMA'yı çalıştırmasını engeller.
+            st.stop() 
 
-
-    # Cevap üret ve göster
-
+    # 3. NORMAL YÖNETMELİK SORGUSU (Eğer ders programı sorulmadıysa çalışır)
     with st.chat_message("assistant"):
-
         with st.spinner("Yönetmelik taranıyor..."):
-
             cevap = okul_asistani_sorgula(prompt)
-
             st.write(cevap)
-
             st.session_state.messages.append({"role": "assistant", "content": cevap})
+
+st.caption("⚠️ Asistan hata yapabilir. Verilen bilgilerin doğruluğunu her zaman resmi yönetmeliklerden kontrol edin.")
 
 
 
