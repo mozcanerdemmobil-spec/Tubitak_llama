@@ -29,18 +29,60 @@ def program_yukle(sinif_adi):
         # Sayfa bulunamazsa veya dosya yoksa hata döner
         return None
 
-# --- Arayüz İçindeki Kontrol Kısmı ---
-if istenen_sinif:
-    with st.chat_message("assistant"):
-        # Fonksiyona sınıf adını gönderiyoruz (Örn: "12a")
-        df_program = program_yukle(istenen_sinif)
+# --- 4. ARAYÜZ (SOHBET GEÇMİŞİ) ---
+
+if "messages" not in st.session_state:
+    st.session_state.messages = []
+
+# Eski mesajları ekrana bas
+for message in st.session_state.messages:
+    with st.chat_message(message["role"]):
+        st.write(message["content"])
+
+# Kullanıcı yeni bir mesaj yazdığında
+if prompt := st.chat_input("Sorunuzu buraya yazın..."):
+    
+    # 1. Kullanıcı mesajını ekrana bas ve kaydet
+    st.session_state.messages.append({"role": "user", "content": prompt})
+    with st.chat_message("user"):
+        st.write(prompt)
+
+    # 2. DERS PROGRAMI KONTROLÜ (İşte hatayı çözen kısım burada başlıyor)
+    kucuk_prompt = prompt.lower()
+    istenen_sinif = None  # Değişkeni burada güvenli bir şekilde başlattık
+    
+    # Resimdeki sekmelerinle uyumlu sınıf listesi
+    siniflar = ["9a", "10a", "11a", "12a"]
+    
+    # Eğer cümlede program/ders geçiyorsa sınıf ismini ara
+    if "program" in kucuk_prompt or "ders" in kucuk_prompt:
+        for sinif in siniflar:
+            if sinif in kucuk_prompt:
+                istenen_sinif = sinif
+                break
+
+    # 3. Eğer bir sınıf bulunduysa Excel'den getir
+    if istenen_sinif:
+        with st.chat_message("assistant"):
+            with st.spinner(f"{istenen_sinif.upper()} programı getiriliyor..."):
+                df_program = program_yukle(istenen_sinif)
+                
+                if df_program is not None:
+                    st.write(f"İşte **{istenen_sinif.upper()}** sınıfının haftalık programı:")
+                    st.table(df_program)
+                    st.session_state.messages.append({"role": "assistant", "content": f"{istenen_sinif.upper()} programı gösterildi."})
+                else:
+                    st.error(f"Hata: '{istenen_sinif}' sayfası Excel dosyasında bulunamadı!")
         
-        if df_program is not None:
-            st.write(f"İşte **{istenen_sinif.upper()}** sınıfının ders programı:")
-            st.table(df_program)
-            st.session_state.messages.append({"role": "assistant", "content": f"{istenen_sinif.upper()} programı gösterildi."})
-        else:
-            st.error(f"Maalesef '{istenen_sinif}' isimli bir sayfa Excel dosyasında bulunamadı.")
+        st.rerun() # Sayfayı yenileyerek akışı burada kesiyoruz, LLM'e gitmiyoruz.
+
+    # 4. NORMAL YÖNETMELİK SORGUSU (Eğer program sorulmadıysa çalışır)
+    else:
+        with st.chat_message("assistant"):
+            with st.spinner("Yönetmelik taranıyor..."):
+                cevap = okul_asistani_sorgula(prompt)
+                st.write(cevap)
+                st.session_state.messages.append({"role": "assistant", "content": cevap})
         
 @st.cache_resource
 
