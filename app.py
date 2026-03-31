@@ -21,7 +21,7 @@ st.title("🎓 MEB Ortaöğretim Yönetmelik Asistanı")
 def program_yukle():
     try:
         # GitHub reponda bu dosyayı oluşturduğundan emin ol
-        return pd.read_csv("programlar.csv")
+        return pd.read_csv(""https://raw.githubusercontent.com/mozcanerdemmobil-spec/Tubitak_llama/main/programlar.csv")
     except Exception as e:
         return None
         
