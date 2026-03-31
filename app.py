@@ -23,6 +23,16 @@ with st.sidebar:
     if not api_key:
         st.warning("Lütfen devam etmek için API Key giriniz.")
         st.stop()
+# Combo box (selectbox) oluşturma
+secenekler = ["Öğretmen", "Öğrenci 9-A", "Öğrenci 9-B", "Öğrenci 10-A", "Veli"]
+secilen_rol = st.sidebar.selectbox(
+    "Lütfen rolünüzü seçiniz:",
+    secenekler
+)
+
+# Seçilen değere göre ana ekranda işlem yapma
+st.title(f"Hoş geldiniz!")
+st.write(f"Şu anki görünüm: **{secilen_rol}**")
 
 # Gerekli nesneleri oluşturuyoruz
 client = Groq(api_key=api_key)
