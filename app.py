@@ -43,7 +43,7 @@ def display_pdf(url):
     pdf_display = f'<iframe src="data:application/pdf;base64,{base64_pdf}" width="100%" height="800" type="application/pdf"></iframe>'
     
     # HTML'i Streamlit içinde çalıştırıyoruz
-    st.markdown(pdf_display, unsafe_allow_allow_html=True)
+    st.markdown(pdf_display, unsafe_allow_html=True)
 
 # Sayfa Yapılandırması
 st.set_page_config(page_title="Chatbot PDF Viewer", layout="wide")
