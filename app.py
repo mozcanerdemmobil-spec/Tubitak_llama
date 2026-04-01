@@ -53,12 +53,7 @@ with st.sidebar:
     st.header("⚙️ Ayarlar")
     api_key = st.text_input("Groq API Key", type="password").strip()
     
-    secenekler = [
-        "Görevli", "Öğrenci 9a", "Öğrenci 10a", "Öğrenci 11a", "Öğrenci 12a",
-        "Öğrenci 9-B/BL", "Öğrenci 9-C/BL" # Listeyi buraya istediğin gibi ekleyebilirsin
-    ]
-    secilen_rol = st.selectbox("Lütfen rolünüzü seçiniz:", secenekler)
-    st.info(f"Profil: {secilen_rol}")
+    
 
     if not api_key:
         st.warning("Lütfen devam etmek için API Key giriniz.")
