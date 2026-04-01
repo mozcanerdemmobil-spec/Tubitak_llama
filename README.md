@@ -2,6 +2,10 @@
 
 Bu proje, MEB Ortaöğretim Kurumları Yönetmeliği konusunda uzmanlaşması planlanmış, "llama-3.1-8b-instant" modelini kullanan bir Yapay Zeka Botudur. Kullanıcıların sınıf geçme, devamsızlık ve disiplin gibi konulardaki sorularını resmi yönetmeliğe göre yanıtlamayı amaçlar.
 
+# 🏫 Öğrenci Asistanı (TÜBİTAK Llama)
+
+Bu modelde ise, Daha arkadaş canlısı olması ve okulumuzda okuyan kişilere özel olması planlanmış bir Asistan modelidir, bu modelde yine "llama-3.1-8b-instant" modelini kullanıyoruz. Ancak bu seferki Modelimiz okul ders programı ile eğitilmiş sanki okuldan bir arkadaş hissi veren zeki bir arkadaş yapmaktı.
+
 ## 🚀 Uygulamayı Başlat
 
 Aşağıdaki butona tıklayarak asistanla hemen konuşmaya başlayabilirsiniz:
