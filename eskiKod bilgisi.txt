@@ -3,6 +3,8 @@ burda şuna dikkat çekeyim kısaltmalar kullanılınca hata veriyor bunun sebeb
 bu sebeple tabloda sadece dersin kısaltması yazınca kendisi tahmin yapıyor örneğin:
 programlama temelleri dersinin kısaltmasına = fen bilimleri
 
+ve mantık şu eski kodumda tablo direk kullanıcıya veriliyordu şimdi ise tablo yapay zekaya veriliyor ve yapay zeka ise tabloyu kullanıyor
+
 kod kullanılabilirliği var ama hata payıda var
 
 eski kod:
