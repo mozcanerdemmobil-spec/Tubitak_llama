@@ -1,0 +1,773 @@
+ZAMAN ÇİZELGESİ AŞAĞIDAKİ GİBİDİR:
+1.Ders: 08:20 - 09:00
+2.Ders: 09:00 - 09:40
+3.Ders: 09:50 - 10:30
+4.Ders: 10:30 - 11:10
+5.Ders: 11:20 - 12:00
+6.Ders: 12:00 - 12:40
+7.Ders: 13:25 - 14:05
+8.Ders: 14:05 - 14:45
+9.Ders: 14:55 - 15:35
+10.Ders: 15:35 - 16:25
+
+OKUL DERS PROGRAMI:
+
+Sınıf: 9-A/BL
+Sınıf Öğretmeni: KADRİYE AKKÖSE
+Toplam Ders Saati: 44
+Haftalık Ders Programı
+
+Pazartesi: 1-4. Ders PRTEM, 5-6. Ders BTU, 7-9. Ders BTTEM, 10. Ders STDB
+Salı: 1-2. Ders MEGAT, 3. Ders MAT1, 4. Ders ADA, 5-6. Ders YDİL4, 7-9. Ders TDE, 10. Ders MAT1
+Çarşamba: 1-2. Ders BİY, 3. Ders SDİH, 4. Ders DKA1, 5. Ders TDE, 6-8. Ders MAT1
+Perşembe: 1. Ders FİZ1, 2. Ders DKA1, 3-4. Ders MET, 5-6. Ders COĞ
+Cuma: 1-2. Ders TAR, 3-4. Ders KİM, 5. Ders TDE, 6-7. Ders YDİL4, 8. Ders FİZ1, 9-10. Ders BDGSMZ
+
+Dersler ve Öğretmenleri
+
+ADA (Seçmeli Adabı Muaşeret): TÜLAY KAYA
+BDGSMZ (Beden Eğitimi/Görsel Sanatlar/Müzik): BERAT ALTINAY, ÖZLEM KÜÇÜK
+BİY (Biyoloji): KADRİYE AKKÖSE
+BTTEM (Bilişim Teknolojilerinin Temelleri): UMUT TÜRK, ZERVİ PİŞGİN
+BTU (Bilgisayar Tasarım Uygulamaları): FUAT SÜZER, MİKAİL KORKMAZ, UMUT TÜRK
+COĞ (Coğrafya): FUNDA KAPUSUZOĞLU
+DKA1 (Din Kültürü ve Ahlak Bilgisi): BETÜL ERBAY
+FİZ1 (Fizik): BELKIZ HAMEDOĞLU
+KİM (Kimya): AYŞE BANU GÜLHAN
+MAT1 (Matematik): HÜSEYİN METİN
+MEGAT (Meslek Gelişim Atölyesi): EDA ÇINAR, SULTAN PERİNCEK
+MET (Seçmeli Metin Tahlilleri): TÜLAY KAYA
+PRTEM (Programlama Temelleri): FUAT SÜZER, HAKAN AKDENİZ, UMUT TÜRK
+SDİH (Seçmeli Demokrasi ve İnsan Hakları): ŞENOL ERDEM
+STDB (Seçmeli Temel Dini Bilgiler): YASEMİN ŞAHİN YAZICI
+TAR (Tarih): ORHAN GÜLBAŞAR
+TDE (Türk Dili ve Edebiyatı): TÜLAY KAYA
+YDİL4 (İngilizce): AYLİN GÜNERİ
+
+
+Sınıf: 9-B/BL
+Sınıf Öğretmeni: HAKAN AKDENİZ
+Toplam Ders Saati: 44
+Haftalık Ders Programı
+
+Pazartesi: 1-2. Ders KİM, 3. Ders SDİH, 4. Ders TDE, 5-6. Ders MEGAT, 7-9. Ders TDE, 10. Ders ADA
+Salı: 1-2. Ders YDİL4, 3-4. Ders MAT1, 5. Ders TDE, 6. Ders FİZ1, 7. Ders YDİL4, 8. Ders TDE, 9-10. Ders MET
+Çarşamba: 1-4. Ders PRTEM, 5-6. Ders BTU, 7-9. Ders BTTEM
+Perşembe: 3. Ders MAT1, 4-5. Ders BİY, 6-7. Ders TAR, 8-9. Ders MAT1, 10. Ders DKA1
+Cuma: 1. Ders STDB, 2. Ders DKA1, 3-4. Ders COĞ, 5-6. Ders BDGSMZ, 7. Ders FİZ1, 8. Ders YDİL4
+
+Dersler ve Öğretmenleri
+
+ADA (Seçmeli Adabı Muaşeret): NURGÜL BAŞKURT YÖRÜK
+BDGSMZ (Beden Eğitimi/Görsel Sanatlar/Müzik): NİHAT YAZGAN, ÖZLEM KÜÇÜK
+BİY (Biyoloji): HAKAN KAYA
+BTTEM (Bilişim Teknolojilerinin Temelleri): HAKAN AKDENİZ, UMUT TÜRK
+BTU (Bilgisayar Tasarım Uygulamaları): HAKAN AKDENİZ, EMEL YOLDAŞ
+COĞ (Coğrafya): FUNDA KAPUSUZOĞLU
+DKA1 (Din Kültürü ve Ahlak Bilgisi): BETÜL ERBAY
+FİZ1 (Fizik): BELKIZ HAMEDOĞLU
+KİM (Kimya): ÖZLEM ŞEKER
+MAT1 (Matematik): BELKIZ HAMEDOĞLU
+MEGAT (Meslek Gelişim Atölyesi): ZERVİ PİŞGİN
+MET (Seçmeli Metin Tahlilleri): MEHTAP ÖZCAN
+PRTEM (Programlama Temelleri): EMEL YOLDAŞ, ZERVİ PİŞGİN
+SDİH (Seçmeli Demokrasi ve İnsan Hakları): ŞENOL ERDEM
+STDB (Seçmeli Temel Dini Bilgiler): BETÜL ERBAY
+TAR (Tarih): EMİNE GÖKÇE ARSLAN
+TDE (Türk Dili ve Edebiyatı): NURGÜL BAŞKURT YÖRÜK
+YDİL4 (İngilizce): AYLİN GÜNERİ
+
+Sınıf: 9-C/BL
+Sınıf Öğretmeni: EMEL YOLDAŞ
+Toplam Ders Saati: 44
+Haftalık Ders Programı
+
+Pazartesi: 1-2. Ders YDİL4, 3. Ders STDB, 4. Ders MAT1, 5-6. Ders TDE, 7. Ders YDİL4
+Salı: 1-2. Ders TAR, 3-4. Ders MET, 5-6. Ders COĞ, 7-8. Ders MEGAT
+Çarşamba: 1. Ders SDİH, 2. Ders FİZ1, 3-4. Ders MAT1, 5-6. Ders BİY, 7-9. Ders TDE
+Perşembe: 1-4. Ders PRTEM, 5-6. Ders BTU, 7-9. Ders BTTEM, 10. Ders DKA1
+Cuma: 1. Ders ADA, 2-3. Ders BDGSMZ, 4. Ders DKA1, 5. Ders YDİL4, 6. Ders FİZ1, 7-8. Ders KİM, 9-10. Ders MAT1
+
+Dersler ve Öğretmenleri
+
+ADA (Seçmeli Adabı Muaşeret): TÜLİN AŞUTLİ
+BDGSMZ (Beden Eğitimi/Görsel Sanatlar/Müzik): NİHAT YAZGAN, ÖZLEM KÜÇÜK
+BİY (Biyoloji): KADRİYE AKKÖSE
+BTTEM (Bilişim Teknolojilerinin Temelleri): EMEL YOLDAŞ, ZERVİ PİŞGİN
+BTU (Bilgisayar Tasarım Uygulamaları): FUAT SÜZER, EDA ÇINAR
+COĞ (Coğrafya): FUNDA KAPUSUZOĞLU
+DKA1 (Din Kültürü ve Ahlak Bilgisi): BETÜL ERBAY
+FİZ1 (Fizik): BELKIZ HAMEDOĞLU
+KİM (Kimya): AYŞE BANU GÜLHAN
+MAT1 (Matematik): SEMİHA HALİS
+MEGAT (Meslek Gelişim Atölyesi): EDA ÇINAR, SULTAN PERİNCEK
+MET (Seçmeli Metin Tahlilleri): MEHTAP ÖZCAN
+PRTEM (Programlama Temelleri): FUAT SÜZER, UĞUR BİNGÖLLÜ, ZERVİ PİŞGİN
+SDİH (Seçmeli Demokrasi ve İnsan Hakları): ŞENOL ERDEM
+STDB (Seçmeli Temel Dini Bilgiler): YASEMİN ŞAHİN YAZICI
+TAR (Tarih): ORHAN GÜLBAŞAR
+TDE (Türk Dili ve Edebiyatı): NURGÜL BAŞKURT YÖRÜK
+YDİL4 (İngilizce): AYLİN GÜNERİ
+
+
+Sınıf: 9-D/BL
+Sınıf Öğretmeni: MEHTAP MUTLU BİLGİN
+Toplam Ders Saati: 44
+Haftalık Ders Programı
+
+Pazartesi: 1-2. Ders MAT1, 3. Ders TDE, 4. Ders DKA1, 5. Ders SDİH, 6. Ders YDİL4, 7-8. Ders BDGSMZ, 9-10. Ders MET
+Salı: 1-2. Ders BİY, 3. Ders STDB, 4-5. Ders TAR, 6-7. Ders TDE, 8-10. Ders YDİL4
+Çarşamba: 1-2. Ders MAT1, 3-4. Ders TDE, 5. Ders FİZ1, 6. Ders ADA, 7. Ders FİZ1, 8. Ders MAT1
+Perşembe: 1-2. Ders KİM, 3-4. Ders COĞ, 5-6. Ders MEGAT, 7. Ders DKA1
+Cuma: 1-4. Ders PRTEM, 5-6. Ders BTU, 7-9. Ders BTTEM
+
+Dersler ve Öğretmenleri
+
+ADA (Seçmeli Adabı Muaşeret): NURGÜL BAŞKURT YÖRÜK
+BDGSMZ (Beden Eğitimi/Görsel Sanatlar/Müzik): BERAT ALTINAY, ÖZLEM KÜÇÜK
+BİY (Biyoloji): GÜL AKIN
+BTTEM (Bilişim Teknolojilerinin Temelleri): EMEL YOLDAŞ, MEHTAP MUTLU BİLGİN
+BTU (Bilgisayar Tasarım Uygulamaları): EDA ÇINAR, EMEL YOLDAŞ
+COĞ (Coğrafya): FUNDA KAPUSUZOĞLU
+DKA1 (Din Kültürü ve Ahlak Bilgisi): YASEMİN ŞAHİN YAZICI
+FİZ1 (Fizik): BELKIZ HAMEDOĞLU
+KİM (Kimya): ÖZLEM ŞEKER
+MAT1 (Matematik): SEMİHA HALİS
+MEGAT (Meslek Gelişim Atölyesi): EMEL YOLDAŞ, MİKAİL KORKMAZ, ZERVİ PİŞGİN
+MET (Seçmeli Metin Tahlilleri): MEHTAP ÖZCAN
+PRTEM (Programlama Temelleri): EMEL YOLDAŞ, MEHTAP MUTLU BİLGİN
+SDİH (Seçmeli Demokrasi ve İnsan Hakları): ŞENOL ERDEM
+STDB (Seçmeli Temel Dini Bilgiler): BETÜL ERBAY
+TAR (Tarih): ORHAN GÜLBAŞAR
+TDE (Türk Dili ve Edebiyatı): NURGÜL BAŞKURT YÖRÜK
+YDİL4 (İngilizce): NEŞE SARAÇOĞLU
+
+Sınıf: 9-E/EL
+Sınıf Öğretmeni: ÖZLEM ŞAHAN
+Toplam Ders Saati: 44
+Haftalık Ders Programı
+
+Pazartesi: 1-2. Ders BİY, 3-4. Ders YDİL4, 5-7. Ders MAT1
+Salı: 1-2. Ders MET, 3-4. Ders COĞ, 5. Ders FİZ1, 6. Ders TDE, 7-8. Ders BDGSMZ
+Çarşamba: 1. Ders FİZ1, 2. Ders SDİH, 3-4. Ders TDE, 5-6. Ders YDİL4, 7-8. Ders DKA1, 9-10. Ders MEGAT
+Perşembe: 1-2. Ders TAR, 3-4. Ders KİM, 5. Ders ADA, 6-7. Ders TDE, 8. Ders STDB, 9-10. Ders MAT1
+Cuma: 1-8. Ders TEAT (9. ders boş)
+
+Dersler ve Öğretmenleri
+
+ADA (Seçmeli Adabı Muaşeret): TÜLİN AŞUTLİ
+BDGSMZ (Beden Eğitimi/Görsel Sanatlar/Müzik): NİHAT YAZGAN, ÖZLEM KÜÇÜK
+BİY (Biyoloji): GÜL AKIN
+COĞ (Coğrafya): FUNDA KAPUSUZOĞLU
+DKA1 (Din Kültürü ve Ahlak Bilgisi): YASEMİN ŞAHİN YAZICI
+FİZ1 (Fizik): BELKIZ HAMEDOĞLU
+KİM (Kimya): AYŞE BANU GÜLHAN
+MAT1 (Matematik): GÜLHAN KARAMAN
+MEGAT (Meslek Gelişim Atölyesi): AYŞE GÖZE DEVECİ, DEVRİM ÇETİNKAYA
+MET (Seçmeli Metin Tahlilleri): MEHTAP ÖZCAN
+SDİH (Seçmeli Demokrasi ve İnsan Hakları): ŞENOL ERDEM
+STDB (Seçmeli Temel Dini Bilgiler): YASEMİN ŞAHİN YAZICI
+TAR (Tarih): ORHAN GÜLBAŞAR
+TDE (Türk Dili ve Edebiyatı): TÜLAY KAYA
+TEAT (Temel Elektronik Atölyesi): ALİ BAŞARAN, MURAT ÖZDAĞ
+YDİL4 (İngilizce): NEŞE SARAÇOĞLU
+
+Sınıf: 9-F/EL
+Sınıf Öğretmeni: HAYDAR UÇAN
+Toplam Ders Saati: 44
+Haftalık Ders Programı
+
+Pazartesi: 1. Ders TDE, 2. Ders ADA, 3-4. Ders BDGSMZ, 5-6. Ders MAT1, 7-8. Ders MET
+Salı: 1-8. Ders TEAT (9. ders boş)
+Çarşamba: 1-2. Ders MEGAT, 3-4. Ders BİY, 5-6. Ders MAT1, 7-9. Ders YDİL4
+Perşembe: 1-2. Ders COĞ, 3. Ders FİZ1, 4-5. Ders KİM, 6-8. Ders TDE, 9. Ders STDB
+Cuma: 1. Ders FİZ1, 2. Ders TDE, 3-4. Ders TAR, 5-6. Ders DKA1, 7. Ders SDİH, 8. Ders MAT1, 9. Ders YDİL4
+
+Dersler ve Öğretmenleri
+
+ADA (Seçmeli Adabı Muaşeret): TÜLİN AŞUTLİ
+BDGSMZ (Beden Eğitimi/Görsel Sanatlar/Müzik): NİHAT YAZGAN, ÖZLEM KÜÇÜK
+BİY (Biyoloji): KADRİYE AKKÖSE
+COĞ (Coğrafya): FUNDA KAPUSUZOĞLU
+DKA1 (Din Kültürü ve Ahlak Bilgisi): BETÜL ERBAY
+FİZ1 (Fizik): BELKIZ HAMEDOĞLU
+KİM (Kimya): ÖZLEM ŞEKER
+MAT1 (Matematik): SEMİHA HALİS
+MEGAT (Meslek Gelişim Atölyesi): ÖZLEM ŞAHAN, UĞURHANN AKGÜL
+MET (Seçmeli Metin Tahlilleri): MEHTAP ÖZCAN
+SDİH (Seçmeli Demokrasi ve İnsan Hakları): ŞEVKET ÖZTÜRK
+STDB (Seçmeli Temel Dini Bilgiler): YASEMİN ŞAHİN YAZICI
+TAR (Tarih): EMİNE GÖKÇE ARSLAN
+TDE (Türk Dili ve Edebiyatı): TÜLİN AŞUTLİ
+TEAT (Temel Elektronik Atölyesi): ALİ BAŞARAN, AYŞE GÖZE DEVECİ, HAYDAR UÇAN
+YDİL4 (İngilizce): NEŞE SARAÇOĞLU
+
+Sınıf: 9-G/EL
+Sınıf Öğretmeni: EYÜP KÖSEOĞLU
+Toplam Ders Saati: 44
+Haftalık Ders Programı
+
+Pazartesi: 1-2. Ders TDE, 3-4. Ders YDİL4, 5-6. Ders MET, 7-8. Ders TAR
+Salı: 1-2. Ders MAT1, 3. Ders FİZ1, 4. Ders MAT1, 5-6. Ders TDE, 7-8. Ders COĞ
+Çarşamba: 1-8. Ders TEAT (9. ders boş)
+Perşembe: 1-2. Ders BİY, 3-4. Ders DKA1, 5. Ders FİZ1, 6. Ders STDB, 7-8. Ders KİM, 9. Ders SDİH
+Cuma: 1-2. Ders MEGAT, 3. Ders TDE, 4. Ders ADA, 5-6. Ders MAT1, 7-8. Ders BDGSMZ, 9-10. Ders YDİL4
+
+Dersler ve Öğretmenleri
+
+ADA (Seçmeli Adabı Muaşeret): TÜLİN AŞUTLİ
+BDGSMZ (Beden Eğitimi/Görsel Sanatlar/Müzik): BERAT ALTINAY, ÖZLEM KÜÇÜK
+BİY (Biyoloji): HAKAN KAYA
+COĞ (Coğrafya): FUNDA KAPUSUZOĞLU
+DKA1 (Din Kültürü ve Ahlak Bilgisi): BETÜL ERBAY
+FİZ1 (Fizik): FATMA GÜL ÖNCÜL
+KİM (Kimya): AYŞE BANU GÜLHAN
+MAT1 (Matematik): SONNUR ARAL
+MEGAT (Meslek Gelişim Atölyesi): UĞURHANN AKGÜL, VOLKAN PULAT, İBRAHİM ASLAN
+MET (Seçmeli Metin Tahlilleri): NURAY ÇOBAN
+SDİH (Seçmeli Demokrasi ve İnsan Hakları): ŞENOL ERDEM
+STDB (Seçmeli Temel Dini Bilgiler): YASEMİN ŞAHİN YAZICI
+TAR (Tarih): ORHAN GÜLBAŞAR
+TDE (Türk Dili ve Edebiyatı): İSMAİL OĞUZ YÜCEL
+TEAT (Temel Elektronik Atölyesi): EYÜP KÖSEOĞLU, HASAN GURAN, HAYDAR UÇAN
+YDİL4 (İngilizce): EMİNE DÜŞTEGÖR
+
+Sınıf: 9-H/EL
+Sınıf Öğretmeni: DEVRİM ÇETİNKAYA
+Toplam Ders Saati: 44
+Haftalık Ders Programı
+
+Pazartesi: 1-2. Ders YDİL4, 3-4. Ders TDE, 5-6. Ders BDGSMZ, 7-8. Ders TAR
+Salı: 1-2. Ders DKA1, 3-4. Ders KİM, 5. Ders FİZ1, 6. Ders SDİH, 7-8. Ders YDİL4
+Çarşamba: 1-2. Ders MAT1, 3-4. Ders BİY, 5. Ders FİZ1, 6-8. Ders TDE, 9-10. Ders MEGAT
+Perşembe: 1-8. Ders TEAT (9. ders boş)
+Cuma: 1-2. Ders COĞ, 3. Ders MAT1, 4-5. Ders MET, 6-7. Ders TDE, 8. Ders STDB, 9-10. Ders MAT1
+
+Dersler ve Öğretmenleri
+
+ADA (Seçmeli Adabı Muaşeret): İSMAİL OĞUZ YÜCEL
+BDGSMZ (Beden Eğitimi/Görsel Sanatlar/Müzik): NİHAT YAZGAN, ÖZLEM KÜÇÜK
+BİY (Biyoloji): HAKAN KAYA
+COĞ (Coğrafya): FUNDA KAPUSUZOĞLU
+DKA1 (Din Kültürü ve Ahlak Bilgisi): RABİA BETÜL SAKALI
+FİZ1 (Fizik): FATMA GÜL ÖNCÜL
+KİM (Kimya): ÖZLEM ŞEKER
+MAT1 (Matematik): SONNUR ARAL
+MEGAT (Meslek Gelişim Atölyesi): NESLİHAN BİBEROĞLU, TARIK GÖZLÜ, UĞURHANN AKGÜL
+MET (Seçmeli Metin Tahlilleri): İSMAİL OĞUZ YÜCEL
+SDİH (Seçmeli Demokrasi ve İnsan Hakları): ŞEVKET ÖZTÜRK
+STDB (Seçmeli Temel Dini Bilgiler): BETÜL ERBAY
+TAR (Tarih): EMİNE GÖKÇE ARSLAN
+TDE (Türk Dili ve Edebiyatı): İSMAİL OĞUZ YÜCEL
+TEAT (Temel Elektronik Atölyesi): DEVRİM ÇETİNKAYA, ÖZLEM ŞAHAN
+YDİL4 (İngilizce): EMİNE DÜŞTEGÖR
+
+
+Sınıf: 9-I/EL
+Sınıf Öğretmeni: ALİ BAŞARAN
+Toplam Ders Saati: 44
+
+Haftalık Ders Programı
+
+Pazartesi: 1-2. Ders TDE, 3-4. Ders BİY, 5-6. Ders YDİL4
+Salı: 1-2. Ders FİZ1, 3. Ders TDE, 4-5. Ders BDGSMZ, 6-7. Ders MEGAT, 8-9. Ders KİM, 10. Ders STDB
+Çarşamba: 1-2. Ders COĞ, 3-4. Ders MAT1, 5-6. Ders DKA1, 7. Ders MAT1, 8. Ders SDİH, 9-10. Ders MET
+Perşembe: 1-8. Ders TEAT (9. ders boş)
+Cuma: 1-2. Ders MAT1, 3-4. Ders TAR, 5-6. Ders TDE, 7-8. Ders YDİL4, 9. Ders ADA
+Dersler ve Öğretmenleri
+
+ADA (Seçmeli Adabı Muaşeret): HASAN ALİ ÖZÇELİK
+BDGSMZ (Beden Eğitimi/Görsel Sanatlar/Müzik): BERAT ALTINAY, ÖZLEM KÜÇÜK
+BİY (Biyoloji): HAKAN KAYA
+COĞ (Coğrafya): FUNDA KAPUSUZOĞLU
+DKA1 (Din Kültürü ve Ahlak Bilgisi): YASEMİN ŞAHİN YAZICI
+FİZ1 (Fizik): FATMA GÜL ÖNCÜL
+KİM (Kimya): ÖZLEM ŞEKER
+MAT1 (Matematik): SONNUR ARAL
+MEGAT (Meslek Gelişim Atölyesi): NESLİHAN BİBEROĞLU
+MET (Seçmeli Metin Tahlilleri): MEHTAP ÖZCAN
+SDİH (Seçmeli Demokrasi ve İnsan Hakları): ŞENOL ERDEM
+STDB (Seçmeli Temel Dini Bilgiler): YASEMİN ŞAHİN YAZICI
+TAR (Tarih): ORHAN GÜLBAŞAR
+TDE (Türk Dili ve Edebiyatı): HASAN ALİ ÖZÇELİK
+TEAT (Temel Elektronik Atölyesi): ALİ BAŞARAN
+YDİL4 (İngilizce): EMİNE DÜŞTEGÖR
+
+Sınıf: 9/ATP
+Sınıf Öğretmeni: HASAN GURAN
+Toplam Ders Saati: 44
+Haftalık Ders Programı
+
+Pazartesi: 1-8. Ders TEAT (9. ders boş)
+Salı: 1-2. Ders COĞ, 3. Ders TDE, 4. Ders STDB, 5-6. Ders DKA1, 7-8. Ders TAR, 9-10. Ders YDİL4
+Çarşamba: 1-2. Ders BDGSMZ, 3-4. Ders MEGAT, 5. Ders SDİH, 6. Ders TDE, 7-8. Ders MAT1, 9-10. Ders FİZ1
+Perşembe: 1-2. Ders MET, 3-4. Ders MAT1, 5-6. Ders KİM, 7. Ders MAT1, 8. Ders ADA, 9. Ders TDE
+Cuma: 1-2. Ders BİY, 3-4. Ders TDE, 5-6. Ders YDİL4
+
+Dersler ve Öğretmenleri
+
+ADA (Seçmeli Adabı Muaşeret): TÜLAY KAYA
+BDGSMZ (Beden Eğitimi/Görsel Sanatlar/Müzik): BERAT ALTINAY, MEHMET BULDAK
+BİY (Biyoloji): HAKAN KAYA
+COĞ (Coğrafya): FUNDA KAPUSUZOĞLU
+DKA1 (Din Kültürü ve Ahlak Bilgisi): BETÜL ERBAY
+FİZ1 (Fizik): NALAN TİRYAKİ
+KİM (Kimya): AYŞE BANU GÜLHAN
+MAT1 (Matematik): GÜLHAN KARAMAN
+MEGAT (Meslek Gelişim Atölyesi): ESMA AYER BAĞDAŞ, NESLİHAN BİBEROĞLU
+MET (Seçmeli Metin Tahlilleri): TÜLAY KAYA
+SDİH (Seçmeli Demokrasi ve İnsan Hakları): ŞENOL ERDEM
+STDB (Seçmeli Temel Dini Bilgiler): YASEMİN ŞAHİN YAZICI
+TAR (Tarih): EMİNE GÖKÇE ARSLAN
+TDE (Türk Dili ve Edebiyatı): TÜLAY KAYA
+TEAT (Temel Elektronik Atölyesi): HASAN GURAN, VOLKAN PULAT
+YDİL4 (İngilizce): EMİNE DÜŞTEGÖR
+
+Sınıf: 10A/BL
+Sınıf Öğretmeni: ŞENOL ERDEM
+Toplam Ders Saati: 45
+Haftalık Ders Programı
+
+Pazartesi: 1-2. Ders FELS, 3-4. Ders MAT3, 5-6. Ders TDE10, 7. Ders REH, 8-9. Ders COĞ
+Salı: 1-3. Ders RKO, 4. Ders MAT3, 5-6. Ders FİZ2, 7-8. Ders TAR, 9-10. Ders BDGSMZ
+Çarşamba: 1-10. Ders NTP
+Perşembe: 1-2. Ders DKA1, 3-4. Ders MAT3, 5. Ders STDB, 6. Ders SMT, 7-8. Ders TDE10, 9-10. Ders KİM2
+Cuma: 1-2. Ders YDİL2, 3-4. Ders BİY, 5-6. Ders SSE
+
+Dersler ve Öğretmenleri
+
+BDGSMZ (Beden Eğitimi/Görsel Sanatlar/Müzik): MEHMET BULDAK, NİHAT YAZGAN
+BİY (Biyoloji): GÜL AKIN
+COĞ (Coğrafya): İSMAİL OĞUZ YÜCEL
+DKA1 (Din Kültürü ve Ahlak Bilgisi): RABİA BETÜL SAKALI
+FELS (Felsefe): ŞENOL ERDEM
+FİZ2 (Fizik): NALAN TİRYAKİ
+KİM2 (Kimya): AYŞE BANU GÜLHAN
+MAT3 (Matematik): FATMA GÜL ÖNCÜL
+NTP (Nesne Tabanlı Programlama): EDA ÇINAR, OYA TÜRKOĞLU, UĞUR BİNGÖLLÜ
+REH (Rehberlik): ŞENOL ERDEM
+RKO (Robotik Kodlama): DERYA ŞAHİN, FUAT SÜZER, UMUT TÜRK
+SMT (Seçmeli Metin Tahlilleri): SEVDİYE ŞAHİNER
+SSE (Seçmeli Spor Eğitimi): BERAT ALTINAY
+STDB (Seçmeli Temel Dini Bilgiler): BETÜL ERBAY
+TAR (Tarih): ORHAN GÜLBAŞAR
+TDE10 (Türk Dili ve Edebiyatı): SEVDİYE ŞAHİNER
+YDİL2 (İngilizce): AYLİN GÜNERİ
+
+Sınıf: 10B/BL
+Sınıf Öğretmeni: AYLİN GÜNERİ
+Toplam Ders Saati: 45
+Haftalık Ders Programı
+
+Pazartesi: 1-2. Ders TDE10, 3. Ders SMT, 4. Ders STDB, 5. Ders MAT3, 6-7. Ders KİM2, 8-9. Ders FELS
+Salı: 1-2. Ders BİY, 3. Ders REH, 4-6. Ders RKO, 7-8. Ders COĞ, 9-10. Ders FİZ2
+Çarşamba: 1-2. Ders MAT3, 3-4. Ders DKA1, 5-6. Ders BDGSMZ, 7-8. Ders MAT3, 9-10. Ders SSE
+Perşembe: 1-10. Ders NTP
+Cuma: 1-2. Ders TAR, 3-4. Ders YDİL2, 5-6. Ders TDE10
+
+Dersler ve Öğretmenleri
+
+BDGSMZ (Beden Eğitimi/Görsel Sanatlar/Müzik): MEHMET BULDAK, NİHAT YAZGAN
+BİY (Biyoloji): KADRİYE AKKÖSE
+COĞ (Coğrafya): İSMAİL OĞUZ YÜCEL
+DKA1 (Din Kültürü ve Ahlak Bilgisi): RABİA BETÜL SAKALI
+FELS (Felsefe): ŞENOL ERDEM
+FİZ2 (Fizik): NALAN TİRYAKİ
+KİM2 (Kimya): ÖZLEM ŞEKER
+MAT3 (Matematik): FATMA GÜL ÖNCÜL
+NTP (Nesne Tabanlı Programlama): DERYA ŞAHİN, HAKAN AKDENİZ, UMUT TÜRK
+REH (Rehberlik): AYLİN GÜNERİ
+RKO (Robotik Kodlama): EDA ÇINAR, SULTAN PERİNCEK, ZERVİ PİŞGİN
+SMT (Seçmeli Metin Tahlilleri): SEVDİYE ŞAHİNER
+SSE (Seçmeli Spor Eğitimi): BERAT ALTINAY
+STDB (Seçmeli Temel Dini Bilgiler): RABİA BETÜL SAKALI
+TAR (Tarih): EMİNE GÖKÇE ARSLAN
+TDE10 (Türk Dili ve Edebiyatı): SEVDİYE ŞAHİNER
+YDİL2 (İngilizce): AYLİN GÜNERİ
+
+Sınıf: 10C/EN
+Sınıf Öğretmeni: YÜKSEL ERSOY
+Toplam Ders Saati: 45
+Haftalık Ders Programı
+
+Pazartesi: 1-2. Ders BDGSMZ, 3-4. Ders BİY, 5-6. Ders YDİL2, 7-8. Ders FİZ2
+Salı: 1-8. Ders KKA, 9. Ders REH
+Çarşamba: 1-2. Ders COĞ, 3-4. Ders MAT3, 5-6. Ders BDEVD, 7-8. Ders SSE, 9-10. Ders FELS
+Perşembe: 1-2. Ders MAT3, 3-4. Ders TDE10, 5. Ders SMT, 6. Ders MAT3, 7. Ders STDB, 8-10. Ders ESAS
+Cuma: 1-2. Ders DKA1, 3-4. Ders TDE10, 5-6. Ders KİM2, 7-8. Ders TAR
+
+Dersler ve Öğretmenleri
+
+BDEVD (Bilgisayarla Devre Dizaynı): ÖZLEM ŞAHAN, VOLKAN PULAT
+BDGSMZ (Beden Eğitimi/Görsel Sanatlar/Müzik): BERAT ALTINAY
+BİY (Biyoloji): GÜL AKIN
+COĞ (Coğrafya): İSMAİL OĞUZ YÜCEL
+DKA1 (Din Kültürü ve Ahlak Bilgisi): RABİA BETÜL SAKALI
+ESAS (Elektrik-Elektronik Esasları): ÇETİN SÜMER, HALUK KAMACI, MURAT ÖZDAĞ
+FELS (Felsefe): ŞENOL ERDEM
+FİZ2 (Fizik): NALAN TİRYAKİ
+KİM2 (Kimya): AYŞE BANU GÜLHAN
+KKA (Kumanda ve Kontrol Atölyesi): DEVRİM ÇETİNKAYA, MURAT ÖZDAĞ, YÜKSEL ERSOY
+MAT3 (Matematik): FATMA GÜL ÖNCÜL
+REH (Rehberlik): YÜKSEL ERSOY
+SMT (Seçmeli Metin Tahlilleri): SEVDİYE ŞAHİNER
+SSE (Seçmeli Spor Eğitimi): BERAT ALTINAY
+STDB (Seçmeli Temel Dini Bilgiler): BETÜL ERBAY
+TAR (Tarih): ORHAN GÜLBAŞAR
+TDE10 (Türk Dili ve Edebiyatı): SEVDİYE ŞAHİNER
+YDİL2 (İngilizce): AYLİN GÜNERİ
+
+Sınıf: 10D/HB
+Sınıf Öğretmeni: VOLKAN PULAT
+Toplam Ders Saati: 45
+Haftalık Ders Programı
+
+Pazartesi: 1-2. Ders TAR, 3-4. Ders KİM2, 5-7. Ders ESAS, 8-9. Ders TDE10, 10. Ders REH
+Salı: 1-8. Ders ELAT, 9-10. Ders SSE
+Çarşamba: 1-2. Ders MAT3, 3-4. Ders BDEVD, 5-6. Ders DKA1, 7-8. Ders FİZ2
+Perşembe: 1-2. Ders YDİL2, 3-4. Ders FELS, 5. Ders STDB, 6. Ders MAT3, 7-8. Ders BDGSMZ
+Cuma: 1-2. Ders BİY, 3-4. Ders TDE10, 5-6. Ders MAT3, 7. Ders SMT, 8-9. Ders COĞ
+
+Dersler ve Öğretmenleri
+
+BDEVD (Bilgisayarla Devre Dizaynı): ÖZLEM ŞAHAN, VOLKAN PULAT
+BDGSMZ (Beden Eğitimi/Görsel Sanatlar/Müzik): MEHMET BULDAK, NİHAT YAZGAN
+BİY (Biyoloji): GÜL AKIN
+COĞ (Coğrafya): TÜLİN AŞUTLİ
+DKA1 (Din Kültürü ve Ahlak Bilgisi): BETÜL ERBAY
+ELAT (Elektronik Atölyesi): ÇETİN SÜMER, HALUK KAMACI
+ESAS (Elektrik-Elektronik Esasları): HAYDAR UÇAN, MURAT TAŞKIN
+FELS (Felsefe): ŞENOL ERDEM
+FİZ2 (Fizik): NALAN TİRYAKİ
+KİM2 (Kimya): ÖZLEM ŞEKER
+MAT3 (Matematik): KÜBRA GÜNAYDIN YILMAZ
+REH (Rehberlik): VOLKAN PULAT
+SMT (Seçmeli Metin Tahlilleri): HASAN ALİ ÖZÇELİK
+SSE (Seçmeli Spor Eğitimi): BERAT ALTINAY
+STDB (Seçmeli Temel Dini Bilgiler): YASEMİN ŞAHİN YAZICI
+TAR (Tarih): ORHAN GÜLBAŞAR
+TDE10 (Türk Dili ve Edebiyatı): HASAN ALİ ÖZÇELİK
+YDİL2 (İngilizce): AYLİN GÜNERİ
+
+Sınıf: 10E/HB
+Sınıf Öğretmeni: KÜBRA GÜNAYDIN YILMAZ
+Toplam Ders Saati: 45
+Haftalık Ders Programı
+
+Pazartesi: 1-2. Ders BİY, 3. Ders STDB, 4-5. Ders FİZ2, 6-7. Ders TDE10, 8-10. Ders ESAS
+Salı: 1-2. Ders MAT3, 3. Ders SMT, 4-5. Ders TDE10, 6-7. Ders KİM2
+Çarşamba: 1-2. Ders DKA1, 3-4. Ders MAT3, 5-6. Ders SSE, 7-8. Ders BDEVD, 9-10. Ders BDGSMZ
+Perşembe: 1-2. Ders FELS, 3-4. Ders TAR, 5. Ders REH, 6-7. Ders YDİL2, 8. Ders MAT3
+Cuma: 1-2. Ders COĞ, 3-8. Ders ELAT (9-10. ders boş)
+
+Dersler ve Öğretmenleri
+
+BDEVD (Bilgisayarla Devre Dizaynı): ÖZLEM ŞAHAN, VOLKAN PULAT
+BDGSMZ (Beden Eğitimi/Görsel Sanatlar/Müzik): MEHMET BULDAK, NİHAT YAZGAN
+BİY (Biyoloji): KADRİYE AKKÖSE
+COĞ (Coğrafya): İSMAİL OĞUZ YÜCEL
+DKA1 (Din Kültürü ve Ahlak Bilgisi): RABİA BETÜL SAKALI
+ELAT (Elektronik Atölyesi): VOLKAN PULAT, İBRAHİM ASLAN
+ESAS (Elektrik-Elektronik Esasları): HAYDAR UÇAN, MURAT TAŞKIN
+FELS (Felsefe): ŞENOL ERDEM
+FİZ2 (Fizik): NALAN TİRYAKİ
+KİM2 (Kimya): ÖZLEM ŞEKER
+MAT3 (Matematik): KÜBRA GÜNAYDIN YILMAZ
+REH (Rehberlik): KÜBRA GÜNAYDIN YILMAZ
+SMT (Seçmeli Metin Tahlilleri): İSMAİL OĞUZ YÜCEL
+SSE (Seçmeli Spor Eğitimi): BERAT ALTINAY
+STDB (Seçmeli Temel Dini Bilgiler): RABİA BETÜL SAKALI
+TAR (Tarih): EMİNE GÖKÇE ARSLAN
+TDE10 (Türk Dili ve Edebiyatı): HASAN ALİ ÖZÇELİK
+YDİL2 (İngilizce): AYLİN GÜNERİ
+
+Sınıf: 10 ATP
+Sınıf Öğretmeni: ÖZLEM ŞEKER
+Toplam Ders Saati: 45
+Haftalık Ders Programı
+
+Pazartesi: 1-3. Ders ESAS, 4-5. Ders SSE, 6-7. Ders TDE10, 8-9. Ders KİM2, 10. Ders REH
+Salı: 1-2. Ders TDE10, 3-4. Ders DKA1, 5-6. Ders TAR, 7-8. Ders FİZ2, 9. Ders SMT
+Çarşamba: 1-8. Ders KKA, 9-10. Ders BDEVD
+Perşembe: 1-2. Ders MAT3, 3. Ders STDB, 4-5. Ders YDİL2, 6. Ders MAT3, 7-8. Ders FELS, 9-10. Ders BDGSMZ
+Cuma: 1-2. Ders MAT3, 3-4. Ders BİY, 5-6. Ders COĞ
+
+Dersler ve Öğretmenleri
+
+BDEVD (Bilgisayarla Devre Dizaynı): ÖZLEM ŞAHAN, VOLKAN PULAT
+BDGSMZ (Beden Eğitimi/Görsel Sanatlar/Müzik): MEHMET BULDAK, NİHAT YAZGAN
+BİY (Biyoloji): HAKAN KAYA
+COĞ (Coğrafya): FUNDA KAPUSUZOĞLU
+DKA1 (Din Kültürü ve Ahlak Bilgisi): RABİA BETÜL SAKALI
+ESAS (Elektrik-Elektronik Esasları): HAYDAR UÇAN, TARIK GÖZLÜ
+FELS (Felsefe): ŞENOL ERDEM
+FİZ2 (Fizik): NALAN TİRYAKİ
+KİM2 (Kimya): ÖZLEM ŞEKER
+KKA (Kumanda ve Kontrol Atölyesi): DEVRİM ÇETİNKAYA, MURAT TAŞKIN
+MAT3 (Matematik): SÜLEYMAN DİNÇER
+REH (Rehberlik): ÖZLEM ŞEKER
+SMT (Seçmeli Metin Tahlilleri): İSMAİL OĞUZ YÜCEL
+SSE (Seçmeli Spor Eğitimi): BERAT ALTINAY
+STDB (Seçmeli Temel Dini Bilgiler): RABİA BETÜL SAKALI
+TAR (Tarih): EMİNE GÖKÇE ARSLAN
+TDE10 (Türk Dili ve Edebiyatı): İSMAİL OĞUZ YÜCEL
+YDİL2 (İngilizce): AYLİN GÜNERİ
+
+Sınıf: 11A/BL
+Sınıf Öğretmeni: SULTAN PERİNCEK
+Toplam Ders Saati: 45
+Haftalık Ders Programı
+
+Pazartesi: 1-2. Ders STM, 3. Ders SBT, 4. Ders TAR, 5-6. Ders DKA1, 7. Ders FELS
+Salı: 1-7. Ders MOBUY, 8-9. Ders SAGP, 10. Ders TDE10
+Çarşamba: 1-8. Ders WTUG, 9. Ders REH
+Perşembe: 1-4. Ders SYRO, 5-8. Ders GRCAN, 9-10. Ders SDTAS
+Cuma: 1-2. Ders TDE10, 3-4. Ders PSİK, 5. Ders YDİL2, 6. Ders TAR, 7. Ders YDİL2, 8. Ders FELS, 9-10. Ders BDGSMZ
+
+Dersler ve Öğretmenleri
+
+BDGSMZ (Beden Eğitimi/Görsel Sanatlar/Müzik): MEHMET BULDAK, NİHAT YAZGAN
+DKA1 (Din Kültürü ve Ahlak Bilgisi): YASEMİN ŞAHİN YAZICI
+FELS (Felsefe): ŞEVKET ÖZTÜRK
+GRCAN (Grafik ve Canlandırma): OYA TÜRKOĞLU, SULTAN PERİNCEK
+MOBUY (Mobil Uygulamalar): EMRAH ULUIŞIK, UĞUR BİNGÖLLÜ
+PSİK (Seçmeli Psikoloji): ŞEVKET ÖZTÜRK
+REH (Rehberlik): SULTAN PERİNCEK
+SAGP (Seçmeli Ağ Projesi): EMRAH ULUIŞIK, UĞUR BİNGÖLLÜ
+SBT (Sağlık Bilgisi ve Trafik Kültürü): KADRİYE AKKÖSE
+SDTAS (Seçmeli Dijital Tasarım): SULTAN PERİNCEK
+STM (Seçmeli Temel Matematik): GÜLHAN KARAMAN
+SYRO (Seçmeli Yazılım Projesi): EDA ÇINAR, MEHTAP MUTLU BİLGİN
+TAR (Tarih): ORHAN GÜLBAŞAR
+TDE10 (Türk Dili ve Edebiyatı): SEMA UĞUR KINAY
+WTUG (Web Tabanlı Uygulama Geliştirme): MEHTAP MUTLU BİLGİN, SULTAN PERİNCEK
+YDİL2 (İngilizce): NEŞE SARAÇOĞLU
+
+Sınıf: 11B/BL
+Sınıf Öğretmeni: EMRAH ULUIŞIK
+Toplam Ders Saati: 45
+Haftalık Ders Programı
+
+Pazartesi: 1-2. Ders PSİK, 3. Ders TAR, 4. Ders SBT, 5-6. Ders TDE10, 7. Ders FELS, 8. Ders YDİL2, 9. Ders DKA1
+Salı: 1-8. Ders WTUG, 9-10. Ders SDTAS
+Çarşamba: 1-7. Ders MOBUY, 8-9. Ders SAGP
+Perşembe: 1-2. Ders STM, 3-4. Ders BDGSMZ, 5-8. Ders SYRO, 9. Ders REH, 10. Ders DKA1
+Cuma: 1-4. Ders GRCAN, 5-6. Ders TAR, 7-8. Ders TDE10, 9. Ders YDİL2, 10. Ders FELS
+
+Dersler ve Öğretmenleri
+
+BDGSMZ (Beden Eğitimi/Görsel Sanatlar/Müzik): MEHMET BULDAK, NİHAT YAZGAN
+DKA1 (Din Kültürü ve Ahlak Bilgisi): YASEMİN ŞAHİN YAZICI
+FELS (Felsefe): ŞEVKET ÖZTÜRK
+GRCAN (Grafik ve Canlandırma): EDA ÇINAR, SULTAN PERİNCEK
+MOBUY (Mobil Uygulamalar): EMRAH ULUIŞIK, FUAT SÜZER
+PSİK (Seçmeli Psikoloji): ŞEVKET ÖZTÜRK
+REH (Rehberlik): EMRAH ULUIŞIK
+SAGP (Seçmeli Ağ Projesi): EMRAH ULUIŞIK, FUAT SÜZER
+SBT (Sağlık Bilgisi ve Trafik Kültürü): KADRİYE AKKÖSE
+SDTAS (Seçmeli Dijital Tasarım): SULTAN PERİNCEK, ZERVİ PİŞGİN
+STM (Seçmeli Temel Matematik): KÜBRA GÜNAYDIN YILMAZ
+SYRO (Seçmeli Yazılım Projesi): EMRAH ULUIŞIK, MEHTAP MUTLU BİLGİN
+TAR (Tarih): ORHAN GÜLBAŞAR
+TDE10 (Türk Dili ve Edebiyatı): TÜLİN AŞUTLİ
+WTUG (Web Tabanlı Uygulama Geliştirme): EMEL YOLDAŞ, OYA TÜRKOĞLU
+YDİL2 (İngilizce): NEŞE SARAÇOĞLU
+
+Sınıf: 11C/EN
+Sınıf Öğretmeni: HALUK KAMACI
+Toplam Ders Saati: 45
+Haftalık Ders Programı
+
+Pazartesi: 1-4. Ders MKDKD, 5-7. Ders SHİD, 8-9. Ders FELS
+Salı: 1-2. Ders TDE10, 3. Ders SBT, 4-10. Ders SELP
+Çarşamba: 1-2. Ders YDİL2, 3-4. Ders DKA1, 5-8. Ders ENDELT, 9. Ders DKA1
+Perşembe: 1-8. Ders OTMSAT (9. ders boş)
+Cuma: 1-2. Ders TDE10, 3-4. Ders STM, 5. Ders TAR, 6. Ders REH, 7-8. Ders BDGSMZ, 9. Ders TAR
+
+Dersler ve Öğretmenleri
+
+BDGSMZ (Beden Eğitimi/Görsel Sanatlar/Müzik): MEHMET BULDAK, NİHAT YAZGAN
+DKA1 (Din Kültürü ve Ahlak Bilgisi): YASEMİN ŞAHİN YAZICI
+ENDELT (Endüstriyel Elektronik): AYŞE GÖZE DEVECİ, TARIK GÖZLÜ
+FELS (Felsefe): ŞEVKET ÖZTÜRK
+MKDKD (Mikrodenetleyici ve Kodlama): İBRAHİM ASLAN, MEHMET ALİ DAL
+OTMSAT (Otomasyon Atölyesi): MURAT TAŞKIN, YÜKSEL ERSOY
+REH (Rehberlik): HALUK KAMACI
+SBT (Sağlık Bilgisi ve Trafik Kültürü): GÜL AKIN
+SELP (Seçmeli Elektrik-Elektronik Projeler): HASAN GURAN, TARIK GÖZLÜ
+SHİD (Seçmeli Hidrolik ve Pnömatik): ALİ BAŞARAN, MURAT ÖZDAĞ
+STM (Seçmeli Temel Matematik): KÜBRA GÜNAYDIN YILMAZ
+TAR (Tarih): EMİNE GÖKÇE ARSLAN
+TDE10 (Türk Dili ve Edebiyatı): HASAN ALİ ÖZÇELİK
+YDİL2 (İngilizce): NEŞE SARAÇOĞLU
+
+Sınıf: 11D/HB
+Sınıf Öğretmeni: HAKAN KAYA
+Toplam Ders Saati: 45
+Haftalık Ders Programı
+
+Pazartesi: 1-4. Ders GRTS, 5-8. Ders HBR, 9. Ders YDİL2, 10. Ders TAR
+Salı: 1-2. Ders FELS, 3. Ders DKA1, 4. Ders TAR, 5-6. Ders TDE10, 7-8. Ders BDGSMZ
+Çarşamba: 1. Ders REH, 2. Ders SBT, 3. Ders DKA1, 4. Ders YDİL2, 5-6. Ders STM, 7-8. Ders TDE10
+Perşembe: 1-4. Ders SSEI, 5-7. Ders SÇOS, 8-10. Ders S3D
+Cuma: 1-8. Ders MDGA (9. ders boş)
+
+Dersler ve Öğretmenleri
+
+BDGSMZ (Beden Eğitimi/Görsel Sanatlar/Müzik): BERAT ALTINAY, MEHMET BULDAK
+DKA1 (Din Kültürü ve Ahlak Bilgisi): YASEMİN ŞAHİN YAZICI
+FELS (Felsefe): ŞEVKET ÖZTÜRK
+GRTS (Görüntü Sistemleri): AYŞE GÖZE DEVECİ, EYÜP KÖSEOĞLU, HALUK KAMACI
+HBR (Haberleşme): AYŞE GÖZE DEVECİ, EYÜP KÖSEOĞLU, HALUK KAMACI
+MDGA (Mikro Denetleyici ve Güvenlik Atölyesi): ÇETİN SÜMER, MEHMET ALİ DAL, ÖZLEM ŞAHAN
+REH (Rehberlik): HAKAN KAYA
+S3D (Seçmeli 3D Modelleme): AYŞE GÖZE DEVECİ, EYÜP KÖSEOĞLU
+SBT (Sağlık Bilgisi ve Trafik Kültürü): HAKAN KAYA
+SÇOS (Seçmeli Çoklu Ortam Sistemleri): EYÜP KÖSEOĞLU, HALUK KAMACI, TARIK GÖZLÜ
+SSEI (Seçmeli Seslendirme ve Işıklandırma): EYÜP KÖSEOĞLU, HALUK KAMACI, TARIK GÖZLÜ
+STM (Seçmeli Temel Matematik): GÜLHAN KARAMAN
+TAR (Tarih): EMİNE GÖKÇE ARSLAN
+TDE10 (Türk Dili ve Edebiyatı): MEHTAP ÖZCAN
+YDİL2 (İngilizce): NEŞE SARAÇOĞLU
+
+Sınıf: 11 ATP
+Sınıf Öğretmeni: TARIK GÖZLÜ
+Toplam Ders Saati: 45
+Haftalık Ders Programı
+
+Pazartesi: 1-3. Ders SHİD, 4. Ders REH, 5-8. Ders MKDKD
+Salı: 1-2. Ders TDE10, 3. Ders SBT, 4-5. Ders YDİL2, 6-7. Ders DKA1, 8-9. Ders FELS
+Çarşamba: 1-4. Ders ENDELT, 5-6. Ders TDE10, 7-8. Ders BDGSMZ, 9-10. Ders STM
+Perşembe: 1-7. Ders SELP, 8-9. Ders TAR
+Cuma: 1-8. Ders OTMSAT (9. ders boş)
+
+Dersler ve Öğretmenleri
+
+BDGSMZ (Beden Eğitimi/Görsel Sanatlar/Müzik): MEHMET BULDAK, NİHAT YAZGAN
+DKA1 (Din Kültürü ve Ahlak Bilgisi): YASEMİN ŞAHİN YAZICI
+ENDELT (Endüstriyel Elektronik): AYŞE GÖZE DEVECİ, TARIK GÖZLÜ
+FELS (Felsefe): ŞEVKET ÖZTÜRK
+MKDKD (Mikrodenetleyici ve Kodlama): İBRAHİM ASLAN, MEHMET ALİ DAL
+OTMSAT (Otomasyon Atölyesi): MURAT TAŞKIN, YÜKSEL ERSOY
+REH (Rehberlik): TARIK GÖZLÜ
+SBT (Sağlık Bilgisi ve Trafik Kültürü): KADRİYE AKKÖSE
+SELP (Seçmeli Elektrik-Elektronik Projeler): HASAN GURAN, MURAT ÖZDAĞ
+SHİD (Seçmeli Hidrolik ve Pnömatik): ALİ BAŞARAN, MURAT ÖZDAĞ
+STM (Seçmeli Temel Matematik): GÜLHAN KARAMAN
+TAR (Tarih): EMİNE GÖKÇE ARSLAN
+TDE10 (Türk Dili ve Edebiyatı): NURAY ÇOBAN
+YDİL2 (İngilizce): NEŞE SARAÇOĞLU
+
+Sınıf: 12A/BL
+Sınıf Öğretmeni: ZERVİ PİŞGİN
+Toplam Ders Saati: 19
+Haftalık Ders Programı
+
+Pazartesi: 1-2. Ders SMED, 3-4. Ders SMYDİL, 5-7. Ders SWP, 8. Ders DKA1, 9-10. Ders TDE
+Salı: 1-2. Ders YDİL2, 3-5. Ders TDE, 6. Ders İNT1, 7. Ders REH, 8. Ders DKA1, 9. Ders İNT1
+Çarşamba: Staj günü
+Perşembe: Staj günü
+Cuma: Staj günü
+
+Dersler ve Öğretmenleri
+
+DKA1 (Din Kültürü ve Ahlak Bilgisi): YASEMİN ŞAHİN YAZICI
+İNT1 (T.C. İnkılap Tarihi ve Atatürkçülük): ORHAN GÜLBAŞAR
+REH (Rehberlik): ZERVİ PİŞGİN
+SMED (Seçmeli Sosyal Medya): DERYA ŞAHİN, EMRAH ULUIŞIK, MİKAİL KORKMAZ, ZERVİ PİŞGİN
+SMYDİL (Seçmeli Mesleki Yabancı Dil): DERYA ŞAHİN, EMRAH ULUIŞIK, ZERVİ PİŞGİN
+SWP (Seçmeli Web Programcılığı): DERYA ŞAHİN, EMRAH ULUIŞIK, HAKAN AKDENİZ
+TDE (Türk Dili ve Edebiyatı): NURAY ÇOBAN
+YDİL2 (İngilizce): EMİNE DÜŞTEGÖR
+
+Sınıf: 12B/BL
+Sınıf Öğretmeni: OYA TÜRKOĞLU
+Toplam Ders Saati: 19
+Haftalık Ders Programı
+
+Pazartesi: Staj günü
+Salı: Staj günü
+Çarşamba: Staj günü
+Perşembe: 1-3. Ders TDE, 4. Ders REH, 5-6. Ders İNT1, 7. Ders YDİL2, 8. Ders DKA1, 9. Ders YDİL2
+Cuma: 1-3. Ders SWP, 4-5. Ders SMYDİL, 6-7. Ders SMED, 8-9. Ders TDE, 10. Ders DKA1
+
+Dersler ve Öğretmenleri
+
+DKA1 (Din Kültürü ve Ahlak Bilgisi): BETÜL ERBAY
+İNT1 (T.C. İnkılap Tarihi ve Atatürkçülük): ORHAN GÜLBAŞAR
+REH (Rehberlik): OYA TÜRKOĞLU
+SMED (Seçmeli Sosyal Medya): UĞUR BİNGÖLLÜ
+SMYDİL (Seçmeli Mesleki Yabancı Dil): OYA TÜRKOĞLU, UĞUR BİNGÖLLÜ
+SWP (Seçmeli Web Programcılığı): OYA TÜRKOĞLU, UĞUR BİNGÖLLÜ
+TDE (Türk Dili ve Edebiyatı): AYŞE GÜL KARAMANLI
+YDİL2 (İngilizce): EMİNE DÜŞTEGÖR
+
+Sınıf: 12F/HB
+Sınıf Öğretmeni: AYŞE GÜL KARAMANLI
+Toplam Ders Saati: 19
+Haftalık Ders Programı
+
+Pazartesi: Staj günü
+Salı: Staj günü
+Çarşamba: Staj günü
+Perşembe: 1-3. Ders SAES, 4-7. Ders SGKS, 8. Ders YDİL2, 9-10. Ders TDE
+Cuma: 1-2. Ders TDE, 3. Ders REH, 4. Ders YDİL2, 5. Ders TDE, 6-7. Ders İNT1, 8-9. Ders DKA1
+
+Dersler ve Öğretmenleri
+
+DKA1 (Din Kültürü ve Ahlak Bilgisi): BETÜL ERBAY
+İNT1 (T.C. İnkılap Tarihi ve Atatürkçülük): EMİNE GÖKÇE ARSLAN
+REH (Rehberlik): AYŞE GÜL KARAMANLI
+SAES (Seçmeli Akıllı Ev Sistemleri): ÇETİN SÜMER, İBRAHİM ASLAN
+SGKS (Seçmeli Geçiş Kontrol Sistemleri): ÇETİN SÜMER, İBRAHİM ASLAN
+TDE (Türk Dili ve Edebiyatı): AYŞE GÜL KARAMANLI
+YDİL2 (İngilizce): EMİNE DÜŞTEGÖR
+
+Sınıf: 12G/EN
+Sınıf Öğretmeni: İBRAHİM ASLAN
+Toplam Ders Saati: 19
+Haftalık Ders Programı
+
+Pazartesi: 1-3. Ders TDE, 4-5. Ders İNT1, 6. Ders DKA1, 7. Ders YDİL2, 8. Ders TDE, 9-10. Ders SDTAS
+Salı: 1-3. Ders SPRG, 4-5. Ders SSMED, 6. Ders TDE, 7. Ders YDİL2, 8. Ders REH, 9. Ders DKA1
+Çarşamba: Staj günü
+Perşembe: Staj günü
+Cuma: Staj günü
+
+Dersler ve Öğretmenleri
+
+DKA1 (Din Kültürü ve Ahlak Bilgisi): YASEMİN ŞAHİN YAZICI
+İNT1 (T.C. İnkılap Tarihi ve Atatürkçülük): EMİNE GÖKÇE ARSLAN
+REH (Rehberlik): İBRAHİM ASLAN
+SDTAS (Seçmeli Dijital Tasarım): AYŞE GÖZE DEVECİ, EYÜP KÖSEOĞLU, İBRAHİM ASLAN, MEHMET ALİ DAL
+SPRG (Seçmeli Programlama): EYÜP KÖSEOĞLU, MEHMET ALİ DAL, ÖZLEM ŞAHAN
+SSMED (Seçmeli Sosyal Medya): ÖZLEM ŞAHAN
+TDE (Türk Dili ve Edebiyatı): NURAY ÇOBAN
+YDİL2 (İngilizce): NEŞE SARAÇOĞLU
+
+Sınıf: 12 ATP
+Sınıf Öğretmeni: BELKIZ HAMEDOĞLU
+Toplam Ders Saati: 43
+Haftalık Ders Programı
+
+Pazartesi: 1-2. Ders DKA1, 3. Ders STDE2, 4. Ders SFEL1, 5-6. Ders İNT1, 7-8. Ders SCGR, 9-10. Ders SFİZ1
+Salı: 1. Ders REH, 2-3. Ders STAR, 4. Ders SBİY3, 5-6. Ders YDİL2, 7-9. Ders SMAT5
+Çarşamba: 1-2. Ders TDE, 3-4. Ders SMAT5, 5-6. Ders SFİZ1
+Perşembe: 1-2. Ders SKİM4, 3-4. Ders STDE2, 5-6. Ders SMAT5, 7-8. Ders TDE, 9. Ders STDE2
+Cuma: 1-2. Ders SKİM4, 3-4. Ders SMAT5, 5-6. Ders SBİY3, 7. Ders TDE, 8-9. Ders SFİZ1
+
+Dersler ve Öğretmenleri
+
+DKA1 (Din Kültürü ve Ahlak Bilgisi): RABİA BETÜL SAKALI
+İNT1 (T.C. İnkılap Tarihi ve Atatürkçülük): ORHAN GÜLBAŞAR
+REH (Rehberlik): BELKIZ HAMEDOĞLU
+SBİY3 (Seçmeli Biyoloji): GÜL AKIN
+SCGR (Seçmeli Coğrafya): MUHAMMET HANİFİ DEMİR
+SFEL1 (Felsefe-1): ŞENOL ERDEM
+SFİZ1 (Seçmeli Fizik-1): NALAN TİRYAKİ
+SKİM4 (Seçmeli Kimya): AYŞE BANU GÜLHAN
+SMAT5 (Seçmeli Matematik): BELKIZ HAMEDOĞLU
+STAR (Seçmeli Tarih): EMİNE GÖKÇE ARSLAN
+STDE2 (Seçmeli Türk Dili ve Edebiyatı): TÜLİN AŞUTLİ
+TDE (Türk Dili ve Edebiyatı): AYŞE GÜL KARAMANLI
+YDİL2 (İngilizce): EMİNE DÜŞTEGÖR
