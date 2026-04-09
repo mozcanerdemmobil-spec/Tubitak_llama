@@ -1,7 +1,4 @@
 streamlit
 groq
-langchain
-langchain-community
-chromadb
-sentence-transformers
+pandas
 openpyxl
