@@ -5,3 +5,4 @@ langchain-community
 chromadb
 sentence-transformers
 openpyxl
+protobuf>=4.21.0
